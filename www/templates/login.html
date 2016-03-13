@@ -2,18 +2,18 @@
 	<ion-content overflow-scroll="true" padding="true" class="has-header">
 		<form class="list">
 			<ion-list>
-				<label class="item item-input">
-					<span class="input-label">Username</span>
-					<input type="text" placeholder="">
+				<label class="item item-input" name="Username">
+					<input type="text" placeholder="Username">
 				</label>
-				<label class="item item-input">
-					<span class="input-label">Password</span>
-					<input type="password" placeholder="">
+				<label class="item item-input" name="Password">
+					<input type="password" placeholder="Password">
 				</label>
 			</ion-list>
 			<div class="spacer" style="height: 40px;"></div>
-			<a ui-sref="menu.home" class="button button-positive button-block  icon-right ion-log-in">Log in</a>
-			<a ui-sref="signup" class="button button-positive button-clear button-block ">Or create an account</a>
+			<a ui-sref="tabsController.chronicle" id="login-button1"
+			   class="button button-positive  button-block icon-right ion-log-in">Log in</a>
+			<a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" id="login-button2"
+			   class="button button-positive  button-block button-clear">Or create an account</a>
 		</form>
 	</ion-content>
 </ion-view>

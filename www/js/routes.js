@@ -1,4 +1,4 @@
-angular.module('app.routes', [])
+angular.module('app.routes', ['ionicUIRouter'])
 
 	.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -7,73 +7,79 @@ angular.module('app.routes', [])
 		// Set up the various states which the app can be in.
 		// Each state's controller can be found in controllers.js
 		$stateProvider
-
-
-			.state('menu.home', {
-				url: '/page1',
-				views: {
-					'side-menu21': {
-						templateUrl: 'templates/home.html',
-						controller: 'homeCtrl'
-					}
-				}
-			})
-
-			.state('menu.national', {
-				url: '/page2',
-				views: {
-					'side-menu21': {
-						templateUrl: 'templates/national.html',
-						controller: 'nationalCtrl'
-					}
-				}
-			})
-
-			.state('menu.soviet', {
-				url: '/page3',
-				views: {
-					'side-menu21': {
-						templateUrl: 'templates/soviet.html',
-						controller: 'sovietCtrl'
-					}
-				}
-			})
-
-			.state('menu', {
-				url: '/side-menu21',
-				templateUrl: 'templates/menu.html',
-				abstract: true
-			})
+			
+		/*
+		 The IonicUIRouter.js UI-Router Modification is being used for this route.
+		 To navigate to this route, do NOT use a URL. Instead use one of the following:
+		 1) Using the ui-sref HTML attribute:
+		 ui-sref='tabsController.chronicle'
+		 2) Using $state.go programatically:
+		 $state.go('tabsController.chronicle');
+		 This allows your app to figure out which Tab to open this page in on the fly.
+		 If you're setting a Tabs default page or modifying the .otherwise for your app and
+		 must use a URL, use one of the following:
+		 /page1/tab1/page2
+		 /page1/tab4/page2
+		 */
 
 			.state('login', {
-				url: '/page4',
+				url: '/page5',
 				templateUrl: 'templates/login.html',
 				controller: 'loginCtrl'
 			})
 
 			.state('signup', {
-				url: '/page5',
+				url: '/page6',
 				templateUrl: 'templates/signup.html',
 				controller: 'signupCtrl'
 			})
 
-			.state('modern', {
-				url: '/page6',
-				templateUrl: 'templates/modern.html',
-				controller: 'modernCtrl'
-			})
-
-			.state('menu.addYourOpinion', {
-				url: '/page8',
+			.state('tabsController.chronicle', {
+				url: '/page2',
 				views: {
-					'side-menu21': {
-						templateUrl: 'templates/addYourOpinion.html',
-						controller: 'addYourOpinionCtrl'
+					'tab1': {
+						templateUrl: 'templates/chronicle.html',
+						controller: 'chronicleCtrl'
 					}
 				}
 			})
 
-		$urlRouterProvider.otherwise('/page4')
+			.state('tabsController.chats', {
+				url: '/page3',
+				views: {
+					'tab2': {
+						templateUrl: 'templates/chats.html',
+						controller: 'chatsCtrl'
+					}
+				}
+			})
 
+			.state('tabsController.settings', {
+				url: '/page4',
+				views: {
+					'tab3': {
+						templateUrl: 'templates/settings.html',
+						controller: 'settingsCtrl'
+					}
+				}
+			})
+
+			.state('tabsController.elements', {
+				url: '/page7',
+				views: {
+					'tab4': {
+						templateUrl: 'templates/elements.html',
+						controller: 'elementsCtrl'
+					}
+				}
+			})
+
+			.state('tabsController', {
+				url: '/page1',
+				templateUrl: 'templates/tabsController.html',
+				abstract: true
+			});
+
+		$urlRouterProvider.otherwise('/page5')
 
 	});

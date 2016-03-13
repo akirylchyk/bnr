@@ -44,14 +44,10 @@ angular.module('app.routes', ['ionicUIRouter'])
 				}
 			})
 
-			.state('tabsController.chats', {
-				url: '/page3',
-				views: {
-					'tab2': {
-						templateUrl: 'templates/chats.html',
-						controller: 'chatsCtrl'
-					}
-				}
+			.state('tabsController.chronicle.details', {
+				url: '/page2/:id',
+				templateUrl: 'templates/chats.html',
+				controller: 'chatsCtrl'
 			})
 
 			.state('tabsController.settings', {

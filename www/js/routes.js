@@ -7,7 +7,7 @@ angular.module('app.routes', ['ionicUIRouter'])
 		// Set up the various states which the app can be in.
 		// Each state's controller can be found in controllers.js
 		$stateProvider
-			
+
 		/*
 		 The IonicUIRouter.js UI-Router Modification is being used for this route.
 		 To navigate to this route, do NOT use a URL. Instead use one of the following:
@@ -60,16 +60,6 @@ angular.module('app.routes', ['ionicUIRouter'])
 					'tab3': {
 						templateUrl: 'templates/settings.html',
 						controller: 'settingsCtrl'
-					}
-				}
-			})
-
-			.state('tabsController.elements', {
-				url: '/page7',
-				views: {
-					'tab4': {
-						templateUrl: 'templates/elements.html',
-						controller: 'elementsCtrl'
 					}
 				}
 			})

@@ -1,25 +1,23 @@
-<ion-view title="Chronicle">
+<ion-view title="Хроніка">
 	<ion-content overflow-scroll="true" padding="true" class="has-header">
 		<div class="list card">
 			<morph-carousel data-items="items" on-selected="selectedItem" show-value="number"></morph-carousel>
 		</div>
-
 		<section id="cd-timeline" class="cd-container">
 			<div ng-repeat="activity in timeline | filter: {year: selectedItem.number}">
 				<div class="cd-timeline-block">
-					<!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
-					<div class="cd-timeline-picture text-center dark">
-						<img ng-src="/img/{{activity.profilePicture}}"></img>
+					<div class="cd-timeline-picture text-center assertive">
 					</div>
-					<!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
 					<div class="cd-timeline-content padding dark">
-						<h5 class="marginBottom0 marginTop0">{{activity.title}}</h5>
-						<p class="marginTop5 cd-author">by {{activity.author}} on {{activity.date | date: "d MMM"}}</p>
-						<p class="timelineText">{{activity.text}}</p>
+						<h5 class="cd-timeline-title marginBottom0 marginTop0">{{activity.title}}</h5>
+						<a href="#/page1/page3" class="cd-timeline-discuss">
+							<i class="ion-chatbubble-working positive"></i>
+						</a>
+						<p class="marginTop5 cd-author">{{activity.date}}</p>
+						<p read-more ng-model="activity.text" words="true" length="30"></p>
 					</div>
 				</div>
 			</div>
 		</section>
-
 	</ion-content>
 </ion-view>

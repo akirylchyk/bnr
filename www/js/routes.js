@@ -48,8 +48,8 @@ angular.module('app.routes', ['ionicUIRouter'])
 				url: '/page3/:id',
 				views: {
 					'tab1': {
-						templateUrl: 'templates/chats.html',
-						controller: 'chatsCtrl'
+						templateUrl: 'templates/chronicleDetails.html',
+						controller: 'chronicleDetailsCtrl'
 					}
 				}
 

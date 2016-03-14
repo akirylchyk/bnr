@@ -96,15 +96,15 @@ angular.module('app.controllers', [])
 
 		$scope.items = [
 			{
-				src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+				src:'http://www.racyja.com/wp-content/uploads/2014/11/Postcard_BNR.jpg',
 				sub: 'This is a <b>subtitle</b>'
 			},
 			{
-				src:'http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg',
+				src:'http://www.nn.by/photos/z_2013_03/bnr1948_130325.jpg',
 				sub: '' /* Not showed */
 			},
 			{
-				src:'http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg',
+				src:'http://www.gistoryja.ru/img/XIX-nachalo-XXI-v/provozglashenie-belorusskoj-narodnoj-respubliki-bnr.jpg',
 				thumb:'http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg'
 			}
 		]

@@ -6,7 +6,7 @@ angular.module('app.controllers', [])
 		window.scope = $scope;
 
 		$scope.goToDetails = function (id) {
-			$state.go('tabsController.chronicle.details', {id: id});
+			$state.go('tabsController.chronicleDetails', {id: id});
 		};
 
 		// FAKE CONTENT FOR THE DEMO

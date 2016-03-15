@@ -96,16 +96,32 @@ angular.module('app.controllers', [])
 
 		$scope.items = [
 			{
-				src:'http://www.racyja.com/wp-content/uploads/2014/11/Postcard_BNR.jpg',
-				sub: 'This is a <b>subtitle</b>'
+				src:'../css/img/1.jpg',
+				sub: ''
 			},
 			{
-				src:'http://www.nn.by/photos/z_2013_03/bnr1948_130325.jpg',
-				sub: '' /* Not showed */
+				src:'../css/img/2.jpg',
+				sub: ''
 			},
 			{
-				src:'http://www.gistoryja.ru/img/XIX-nachalo-XXI-v/provozglashenie-belorusskoj-narodnoj-respubliki-bnr.jpg',
-				thumb:'http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg'
+				src:'../css/img/3.jpeg',
+				sub: ''
+			},
+			{
+				src:'../css/img/4.jpg',
+				sub: ''
+			},
+			{
+				src:'../css/img/5.jpg',
+				sub: ''
+			},
+			{
+				src:'../css/img/6.jpg',
+				sub: ''
+			},
+			{
+				src:'../css/img/7.jpg',
+				sub: ''
 			}
 		]
 

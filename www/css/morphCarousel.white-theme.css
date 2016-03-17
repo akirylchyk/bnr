@@ -1,5 +1,5 @@
 .morph-carousel-stage {
-	background-color: white;
+
 }
 
 .morph-carousel__item {
@@ -13,8 +13,8 @@
 	left: 50%;
 	width: 45px;
 	margin-left: -21px;
-	border-left: 1px solid #C2C2C2;
-	border-right: 1px solid #C2C2C2;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
 }
 
 .morph-carousel__shadow {
@@ -24,12 +24,4 @@
 	right: -4px;
 	position: absolute;
 	z-index: 10;
-	background: linear-gradient(
-		to right,
-		rgba(245, 244, 244, 0.95) 0%,
-		rgba(255, 255, 255, 0.7) 15%,
-		rgba(255, 255, 255, 0) 45%,
-		rgba(255, 255, 255, 0) 55%,
-		rgba(255, 255, 255, 0.7) 85%,
-		rgba(245, 244, 244, 0.95) 100%);
 }

@@ -1,6 +1,6 @@
 <ion-view title="Хроніка">
-	<ion-content overflow-scroll="true" padding="true" class="has-header">
-		<div class="list card">
+	<ion-content overflow-scroll="true" padding="true" class="chronicle has-header">
+		<div class="list card chronicle-slide">
 			<morph-carousel data-items="items" on-selected="selectedItem" show-value="number"></morph-carousel>
 		</div>
 		<section id="cd-timeline" class="cd-container">
@@ -8,7 +8,7 @@
 				<div class="cd-timeline-block">
 					<div class="cd-timeline-picture text-center assertive">
 					</div>
-					<div class="cd-timeline-content padding dark">
+					<div class="cd-timeline-content padding">
 						<h5 class="cd-timeline-title marginBottom0 marginTop0">{{activity.title}}</h5>
 						<a ng-click="goToDetails(activity.id)" href="" class="cd-timeline-discuss">
 							<i class="ion-document-text dark"></i>

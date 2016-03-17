@@ -49,7 +49,7 @@ Main components
 }
 
 .cd-author {
-	color: gray;
+
 }
 
 #cd-timeline {
@@ -60,7 +60,6 @@ Main components
 }
 
 #cd-timeline::before {
-	/* this is the vertical line */
 	content: '';
 	position: absolute;
 	top: 0;
@@ -116,7 +115,7 @@ Main components
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 5px;
-	background: white;
+	background: #ef473a;
 }
 
 .cd-timeline-picture img {
@@ -130,10 +129,9 @@ Main components
 .cd-timeline-content {
 	position: relative;
 	margin-left: 27px;
-	background: white;
 	border-radius: 0.25em;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px;
 	margin-bottom: 10px;
 }
 
@@ -201,5 +199,12 @@ Main components
 		font-size: 14px;
 		font-size: 0.875rem;
 	}
+}
+
+.list.card.chronicle-slide {
+	background-color: transparent;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+	margin-left: -10px;
+	margin-right: -10px;
 }
 

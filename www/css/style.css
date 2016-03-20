@@ -35,3 +35,7 @@
 .login-form .button-outline {
 	border-width: 2px;
 }
+
+.details-discuss {
+	background-image: url("img/styles/discuss.png");
+}

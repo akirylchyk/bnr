@@ -69,6 +69,6 @@
 
 	factory.$inject = injections;
 
-	angular.module('app.chronicle', []).factory('chronicle', factory);
+	angular.module('app.chronicle').factory('chronicle', factory);
 
 })();

@@ -39,3 +39,11 @@
 .details-discuss {
 	background-image: url("img/styles/discuss.png");
 }
+
+.login-spacer {
+	height: 25px;
+}
+
+.ion-pull-up-handle {
+	border-radius: 25px 25px 0 0;
+}

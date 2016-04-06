@@ -7,46 +7,47 @@
 		'$state'
 	];
 
-	var controller = function ($scope, chronicle, $state) {
+	var controller = function ($scope, chronicle, $state, $ionicSwipeCardDelegate) {
 
 		window.scope = $scope;
 
 		$scope.goToDetails = function (id) {
 			$state.go('tabs.chronicleDetails', {id: id});
 		};
+		
+		var cardTypes = [{
+			title: 'Нацыянальная хроніка',
+			image: 'css/img/6.jpg'
+		}, {
+			title: 'Савецкая хроніка',
+			image: 'css/img/8.jpg'
+		}, {
+			title: 'Сучасная хроніка',
+			image: 'css/img/9.jpg'
+		}];
 
-		$scope.timeline = chronicle.getTimeline();
+		$scope.cards = Array.prototype.slice.call(cardTypes, 0, 0);
 
-		$scope.items = [
-			{number: 1900},
-			{number: 1901},
-			{number: 1902},
-			{number: 1903},
-			{number: 1904},
-			{number: 1905},
-			{number: 1906},
-			{number: 1907},
-			{number: 1908},
-			{number: 1909},
-			{number: 1910},
-			{number: 1911},
-			{number: 1912},
-			{number: 1913},
-			{number: 1914},
-			{number: 1915},
-			{number: 1916},
-			{number: 1917},
-			{number: 1918},
-			{number: 1919},
-			{number: 1920},
-			{number: 1921},
-			{number: 1922},
-			{number: 1923},
-			{number: 1924},
-			{number: 1925}
-		];
+		$scope.cardSwiped = function (index) {
+			$scope.addCard(index);
+		};
 
-		$scope.selectedItem = $scope.items[18];
+		$scope.cardDestroyed = function (index) {
+			$scope.cards.splice(index, 1);
+		};
+
+		$scope.addCard = function (index) {
+			$scope.index = $scope.index ? $scope.index : 0;
+			if(typeof index !== 'undefined'){
+				$scope.index = $scope.index < cardTypes.length - 1 ? $scope.index + 1 : 0;
+			}
+			$scope.cards.push(angular.extend({}, cardTypes[$scope.index]));
+		};
+
+		$scope.goAway = function () {
+			var card = $ionicSwipeCardDelegate.getSwipeableCard($scope);
+			card.swipe();
+		};
 
 	};
 

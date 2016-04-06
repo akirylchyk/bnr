@@ -10,6 +10,7 @@ angular.module('app',
 		'ionic',
 		'app.chronicle',
 		'app.chronicleDetails',
+		'app.national',
 		'app.login',
 		'app.settings',
 		'app.signup',
@@ -17,7 +18,8 @@ angular.module('app',
 		'morphCarousel',
 		'readMore',
 		'ion-gallery',
-		'ionic-pullup'
+		'ionic-pullup',
+		'ionic.contrib.ui.cards'
 	])
 
 	.run(function ($ionicPlatform) {

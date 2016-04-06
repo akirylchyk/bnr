@@ -12,10 +12,6 @@
 	opacity: 0.7;
 }
 
-.chronicle {
-	background-image: url("img/styles/paper.png");
-}
-
 .details-content.has-tabs {
 	bottom: 0;
 }

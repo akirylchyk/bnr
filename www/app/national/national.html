@@ -1,12 +1,8 @@
-<ion-view title="Дакументы">
+<ion-view title="Нацыяналістычнае">
 	<ion-content overflow-scroll="true" padding="true" class="details-content has-header">
-
-		<h4>{{selectedChronicle.title}}</h4>
-
-		<div>{{selectedChronicle.date}}</div>
-
-		<ion-gallery ion-gallery-items="items"></ion-gallery>
-
+		<div class="list card chronicle-slide">
+			<morph-carousel data-items="items" on-selected="selectedItem" show-value="number"></morph-carousel>
+		</div>
 		<ion-pull-up-footer class="bar-dark"
 		                    on-expand="footerExpand()"
 		                    on-collapse="footerCollapse()"
@@ -21,14 +17,14 @@
 
 			<ion-pull-up-content class="details-discuss" scroll="false">
 				<div class="row">
-
+					<div class="col text-center"><a href="">Нацыяналістычная</a></div>
+					<div class="col text-center"><a href="">Савецкая</a></div>
+					<div class="col text-center"><a href="">Сучасная</a></div>
 				</div>
 				<div class="row">
 
 				</div>
 			</ion-pull-up-content>
-
 		</ion-pull-up-footer>
-
 	</ion-content>
 </ion-view>

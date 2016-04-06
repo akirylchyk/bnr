@@ -4,12 +4,51 @@
 	var injections = [
 		'$scope',
 		'chronicle',
-		'$state'
+		'$state',
+		'$ionicPopover',
+		'national'
 	];
 
-	var controller = function ($scope, chronicle, $state) {
+	var controller = function ($scope, chronicle, $state, $ionicPopover, national) {
 
 		window.scope = $scope;
+
+		var repressionItems = national.getRepressionItems();
+		
+		// .fromTemplate() method
+		var template = '<ion-popover-view><ion-header-bar> <h1 class="title">My Popover Title</h1> </ion-header-bar> <ion-content> Hello! </ion-content></ion-popover-view>';
+
+		$scope.popover = $ionicPopover.fromTemplate(template, {
+			scope: $scope
+		});
+
+		// .fromTemplateUrl() method
+		$ionicPopover.fromTemplateUrl('my-popover.html', {
+			scope: $scope
+		}).then(function (popover) {
+			$scope.popover = popover;
+		});
+
+		$scope.openPopover = function ($event, index) {
+			$scope.repression = repressionItems[index]
+			$scope.popover.show($event);
+		};
+		$scope.closePopover = function () {
+			$scope.popover.hide();
+		};
+		//Cleanup the popover when we're done with it!
+		$scope.$on('$destroy', function () {
+			$scope.popover.remove();
+		});
+		// Execute action on hide popover
+		$scope.$on('popover.hidden', function () {
+			// Execute action
+		});
+		// Execute action on remove popover
+		$scope.$on('popover.removed', function () {
+			// Execute action
+		});
+
 
 		$scope.goToDetails = function (id) {
 			$state.go('tabs.chronicleDetails', {id: id});
@@ -17,34 +56,7 @@
 
 		$scope.timeline = chronicle.getTimeline();
 
-		$scope.items = [
-			{number: 1900},
-			{number: 1901},
-			{number: 1902},
-			{number: 1903},
-			{number: 1904},
-			{number: 1905},
-			{number: 1906},
-			{number: 1907},
-			{number: 1908},
-			{number: 1909},
-			{number: 1910},
-			{number: 1911},
-			{number: 1912},
-			{number: 1913},
-			{number: 1914},
-			{number: 1915},
-			{number: 1916},
-			{number: 1917},
-			{number: 1918},
-			{number: 1919},
-			{number: 1920},
-			{number: 1921},
-			{number: 1922},
-			{number: 1923},
-			{number: 1924},
-			{number: 1925}
-		];
+		$scope.items = national.getTimelineItems();
 
 		$scope.selectedItem = $scope.items[18];
 

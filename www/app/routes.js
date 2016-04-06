@@ -54,6 +54,36 @@ angular.module('app.routes', ['ionicUIRouter'])
 				}
 			})
 
+			.state('tabs.chronicleNational', {
+				url: '/national',
+				views: {
+					'tab1': {
+						templateUrl: 'app/national/national.html',
+						controller: 'nationalController'
+					}
+				}
+			})
+
+			.state('tabs.chronicleSoviet', {
+				url: '/soviet',
+				views: {
+					'tab1': {
+						templateUrl: 'app/soviet/soviet.html',
+						controller: 'sovietController'
+					}
+				}
+			})
+
+			.state('tabs.chronicleModern', {
+				url: '/modern',
+				views: {
+					'tab1': {
+						templateUrl: 'app/modern/modern.html',
+						controller: 'modernController'
+					}
+				}
+			})
+
 			.state('tabs.settings', {
 				url: '/page4',
 				views: {

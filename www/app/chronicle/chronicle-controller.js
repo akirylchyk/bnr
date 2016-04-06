@@ -12,17 +12,20 @@
 		window.scope = $scope;
 
 		$scope.goToDetails = function (id) {
-			$state.go('tabs.chronicleDetails', {id: id});
+			$state.go(cardTypes[id].state);
 		};
-		
+
 		var cardTypes = [{
 			title: 'Нацыянальная хроніка',
+			state: 'tabs.chronicleNational',
 			image: 'css/img/6.jpg'
 		}, {
 			title: 'Савецкая хроніка',
+			state: 'tabs.chronicleSoviet',
 			image: 'css/img/8.jpg'
 		}, {
 			title: 'Сучасная хроніка',
+			state: 'tabs.chronicleModern',
 			image: 'css/img/9.jpg'
 		}];
 
@@ -38,7 +41,7 @@
 
 		$scope.addCard = function (index) {
 			$scope.index = $scope.index ? $scope.index : 0;
-			if(typeof index !== 'undefined'){
+			if (typeof index !== 'undefined') {
 				$scope.index = $scope.index < cardTypes.length - 1 ? $scope.index + 1 : 0;
 			}
 			$scope.cards.push(angular.extend({}, cardTypes[$scope.index]));

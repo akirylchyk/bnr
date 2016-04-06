@@ -7,6 +7,21 @@
 
 		var service = {},
 
+
+			cardTypes = [{
+				title: 'Нацыяналістычная хроніка ->',
+				state: 'tabs.chronicleNational',
+				image: 'css/img/6.jpg'
+			}, {
+				title: 'Савецкая хроніка ->',
+				state: 'tabs.chronicleSoviet',
+				image: 'css/img/8.jpg'
+			}, {
+				title: 'Сучасная хроніка ->',
+				state: 'tabs.chronicleModern',
+				image: 'css/img/9.jpg'
+			}],
+
 			timeline = [
 				{
 					id: 0,
@@ -63,7 +78,11 @@
 		service.getTimelineById = function (id) {
 			return timeline[id];
 		};
-		
+
+		service.getCards = function () {
+			return cardTypes;
+		};
+
 		return service;
 	};
 

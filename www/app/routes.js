@@ -23,7 +23,7 @@ angular.module('app.routes', ['ionicUIRouter'])
 		 */
 
 			.state('login', {
-				url: '/page5',
+				url: '/login',
 				templateUrl: 'app/login/login.html',
 				controller: 'loginController'
 			})
@@ -35,7 +35,7 @@ angular.module('app.routes', ['ionicUIRouter'])
 			})
 
 			.state('tabs.chronicle', {
-				url: '/page2',
+				url: '/chronicle',
 				views: {
 					'tab1': {
 						templateUrl: 'app/chronicle/chronicle.html',
@@ -85,9 +85,9 @@ angular.module('app.routes', ['ionicUIRouter'])
 			})
 
 			.state('tabs.settings', {
-				url: '/page4',
+				url: '/settings',
 				views: {
-					'tab3': {
+					'tab2': {
 						templateUrl: 'app/settings/settings.html',
 						controller: 'settingsController'
 					}
@@ -95,11 +95,11 @@ angular.module('app.routes', ['ionicUIRouter'])
 			})
 
 			.state('tabs', {
-				url: '/page1',
+				url: '/tab',
 				templateUrl: 'app/templates/tabs.html',
 				abstract: true
 			});
 
-		$urlRouterProvider.otherwise('/page5')
+		$urlRouterProvider.otherwise('/login')
 
 	});

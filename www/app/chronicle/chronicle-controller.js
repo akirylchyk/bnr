@@ -12,24 +12,15 @@
 		window.scope = $scope;
 
 		$scope.goToDetails = function (id) {
+			id = typeof id === 'undefined' ? 0 : id;
 			$state.go(cardTypes[id].state);
 		};
 
-		var cardTypes = [{
-			title: 'Нацыянальная хроніка',
-			state: 'tabs.chronicleNational',
-			image: 'css/img/6.jpg'
-		}, {
-			title: 'Савецкая хроніка',
-			state: 'tabs.chronicleSoviet',
-			image: 'css/img/8.jpg'
-		}, {
-			title: 'Сучасная хроніка',
-			state: 'tabs.chronicleModern',
-			image: 'css/img/9.jpg'
-		}];
+		var cardTypes = chronicle.getCards();
 
-		$scope.cards = Array.prototype.slice.call(cardTypes, 0, 0);
+		$scope.cards = [];
+
+		$scope.cards.push(angular.extend({}, cardTypes[0]));
 
 		$scope.cardSwiped = function (index) {
 			$scope.addCard(index);

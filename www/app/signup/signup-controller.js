@@ -8,7 +8,7 @@
 	var controller = function ($scope) {
 
 		window.scope = $scope;
-		
+
 	};
 
 	controller.$inject = injections;

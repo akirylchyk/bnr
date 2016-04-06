@@ -2,13 +2,16 @@
 	'use strict';
 
 	var injections = [
-		'$scope'
+		'$scope',
+		'soviet'
 	];
 
-	var controller = function ($scope) {
+	var controller = function ($scope, soviet) {
 
 		window.scope = $scope;
-		
+
+		$scope.polaroids = soviet.getPolaroids();
+
 	};
 
 	controller.$inject = injections;

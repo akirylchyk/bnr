@@ -2,12 +2,21 @@
 	'use strict';
 
 	var injections = [
-		'$scope'
+		'$scope',
+		'modern'
 	];
 
-	var controller = function ($scope) {
+	var controller = function ($scope, modern) {
 
 		window.scope = $scope;
+
+		$scope.translated = false;
+
+		$scope.items = modern.getTimelineItems();
+
+		$scope.selectedItem = $scope.items[18];
+
+		$scope.words = modern.getWords();
 
 	};
 

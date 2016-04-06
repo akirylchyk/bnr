@@ -2223,9 +2223,9 @@
 				function getLoader() {
 					if (!loaderInstance) {
 						loaderInstance = $ionicTemplateLoader.compile({
-								template: LOADING_TPL,
-								appendTo: $ionicBody.get()
-							})
+							template: LOADING_TPL,
+							appendTo: $ionicBody.get()
+						})
 							.then(function (self) {
 								self.show = function (options) {
 									var templatePromise = options.templateUrl ?
@@ -5622,45 +5622,45 @@
 	 * ```
 	 */
 	IonicModule.service('$ionicListDelegate', ionic.DelegateService([
-			/**
-			 * @ngdoc method
-			 * @name $ionicListDelegate#showReorder
-			 * @param {boolean=} showReorder Set whether or not this list is showing its reorder buttons.
-			 * @returns {boolean} Whether the reorder buttons are shown.
-			 */
-			'showReorder',
-			/**
-			 * @ngdoc method
-			 * @name $ionicListDelegate#showDelete
-			 * @param {boolean=} showDelete Set whether or not this list is showing its delete buttons.
-			 * @returns {boolean} Whether the delete buttons are shown.
-			 */
-			'showDelete',
-			/**
-			 * @ngdoc method
-			 * @name $ionicListDelegate#canSwipeItems
-			 * @param {boolean=} canSwipeItems Set whether or not this list is able to swipe to show
-			 * option buttons.
-			 * @returns {boolean} Whether the list is able to swipe to show option buttons.
-			 */
-			'canSwipeItems',
-			/**
-			 * @ngdoc method
-			 * @name $ionicListDelegate#closeOptionButtons
-			 * @description Closes any option buttons on the list that are swiped open.
-			 */
-			'closeOptionButtons'
-			/**
-			 * @ngdoc method
-			 * @name $ionicListDelegate#$getByHandle
-			 * @param {string} handle
-			 * @returns `delegateInstance` A delegate instance that controls only the
-			 * {@link ionic.directive:ionList} directives with `delegate-handle` matching
-			 * the given handle.
-			 *
-			 * Example: `$ionicListDelegate.$getByHandle('my-handle').showReorder(true);`
-			 */
-		]))
+		/**
+		 * @ngdoc method
+		 * @name $ionicListDelegate#showReorder
+		 * @param {boolean=} showReorder Set whether or not this list is showing its reorder buttons.
+		 * @returns {boolean} Whether the reorder buttons are shown.
+		 */
+		'showReorder',
+		/**
+		 * @ngdoc method
+		 * @name $ionicListDelegate#showDelete
+		 * @param {boolean=} showDelete Set whether or not this list is showing its delete buttons.
+		 * @returns {boolean} Whether the delete buttons are shown.
+		 */
+		'showDelete',
+		/**
+		 * @ngdoc method
+		 * @name $ionicListDelegate#canSwipeItems
+		 * @param {boolean=} canSwipeItems Set whether or not this list is able to swipe to show
+		 * option buttons.
+		 * @returns {boolean} Whether the list is able to swipe to show option buttons.
+		 */
+		'canSwipeItems',
+		/**
+		 * @ngdoc method
+		 * @name $ionicListDelegate#closeOptionButtons
+		 * @description Closes any option buttons on the list that are swiped open.
+		 */
+		'closeOptionButtons'
+		/**
+		 * @ngdoc method
+		 * @name $ionicListDelegate#$getByHandle
+		 * @param {string} handle
+		 * @returns `delegateInstance` A delegate instance that controls only the
+		 * {@link ionic.directive:ionList} directives with `delegate-handle` matching
+		 * the given handle.
+		 *
+		 * Example: `$ionicListDelegate.$getByHandle('my-handle').showReorder(true);`
+		 */
+	]))
 
 		.controller('$ionicList', [
 			'$scope',
@@ -9161,8 +9161,8 @@
 						item.node.style.cssText = item.node.style.cssText
 							.replace(WIDTH_HEIGHT_REGEX, WIDTH_HEIGHT_TEMPLATE_STR
 								//TODO fix item.primarySize + 1 hack
-								.replace(PRIMARY, (item.primarySize = dim.primarySize) + 1)
-								.replace(SECONDARY, (item.secondarySize = dim.secondarySize))
+									.replace(PRIMARY, (item.primarySize = dim.primarySize) + 1)
+									.replace(SECONDARY, (item.secondarySize = dim.secondarySize))
 							);
 					}
 

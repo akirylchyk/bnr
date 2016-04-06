@@ -1,22 +1,22 @@
 angular.module('morphCarousel', [])
 
-	/**
-	 * Morph carousel directive
-	 * @example
-	 * $scope.items = [1, 2, 3, 4, 5, 6]
-	 *
-	 * <morph-carousel
-	 *      data-items="items"
-	 *      selected-item="selectedItem"
-	 *      identifier="carousel-name"
-	 *      show-value="value"></morph-carousel>
-	 *
-	 * @attributes
-	 * data-items {array} - array of items that should be shown in carousel
-	 * selected-item {*} - will contain selected item
-	 * identifier {*} - (optional) used to identify this morphCarousel with $morphCarousel factory
-	 * show-value {string} - (optional) if array of items contain objects this property will determine what value of the object will be shown in carousel
-	 */
+/**
+ * Morph carousel directive
+ * @example
+ * $scope.items = [1, 2, 3, 4, 5, 6]
+ *
+ * <morph-carousel
+ *      data-items="items"
+ *      selected-item="selectedItem"
+ *      identifier="carousel-name"
+ *      show-value="value"></morph-carousel>
+ *
+ * @attributes
+ * data-items {array} - array of items that should be shown in carousel
+ * selected-item {*} - will contain selected item
+ * identifier {*} - (optional) used to identify this morphCarousel with $morphCarousel factory
+ * show-value {string} - (optional) if array of items contain objects this property will determine what value of the object will be shown in carousel
+ */
 	.directive('morphCarousel', ['$ionicGesture', '$timeout', '$morphCarousel',
 		function ($ionicGesture, $timeout, $morphCarousel) {
 

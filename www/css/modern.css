@@ -1,0 +1,12 @@
+.modern-words-row {
+	margin-bottom: 15px;
+}
+
+.modern-word-ru {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.modern-word-by.translated {
+	text-decoration: line-through;
+}

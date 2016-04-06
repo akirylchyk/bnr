@@ -12,12 +12,19 @@
 	opacity: 0.7;
 }
 
-.details-content.has-tabs {
+.national-back.has-tabs, .soviet-back.has-tabs, .modern-back.has-tabs {
 	bottom: 0;
 }
 
-.details-content {
+.national-back {
 	background-image: url("img/styles/paper.png");
+}
+
+.soviet-back {
+}
+
+.modern-back {
+	background-image: url('img/styles/modern-paper.jpg');
 }
 
 .bar-stable.bar.bar-header, .tabs-stable > .tabs, .tabs.tabs-stable {

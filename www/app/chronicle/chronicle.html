@@ -3,7 +3,7 @@
 
 		<swipe-cards>
 			<!--<swipe-card on-card-swipe="cardSwiped($index)" id="start-card">-->
-				<!--Swipe down for a new card-->
+			<!--Swipe down for a new card-->
 			<!--</swipe-card>-->
 			<swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
 				<div>
@@ -15,7 +15,7 @@
 					<div class="button-bar">
 
 						<button class="button button-clear button-dark" ng-click="goToDetails(index)">
-						<span class="neucha-font swipe-card-title">{{card.title}}</span>
+							<span class="neucha-font swipe-card-title">{{card.title}}</span>
 						</button>
 					</div>
 				</div>

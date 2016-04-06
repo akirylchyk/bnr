@@ -1,5 +1,24 @@
 <ion-view title="Сучасная хроніка">
-	<ion-content overflow-scroll="true" padding="true" class="details-content has-header">
+	<ion-content overflow-scroll="true" padding="true" class="modern-back has-header">
+
+		<div class="list card chronicle-slide">
+			<morph-carousel data-items="items" on-selected="selectedItem" show-value="number"></morph-carousel>
+		</div>
+
+		<div class="slab-font">
+			<div class="row modern-words-row" ng-repeat="word in words">
+				<div class="col"><span class="modern-word-by" ng-class="{'translated': translated}">{{word.by}}</span>
+				</div>
+				<div ng-show="translated" class="col"><span class="modern-word-ru">{{word.ru}}</span></div>
+			</div>
+			<button class="button button-outline button-assertive"
+			        ng-hide="translated"
+			        ng-click="translated = !translated">Перевести
+			</button>
+
+
+		</div>
+
 
 		<ion-pull-up-footer class="bar-dark"
 		                    on-expand="footerExpand()"

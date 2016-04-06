@@ -1,5 +1,15 @@
 <ion-view title="Савецкая хроніка">
-	<ion-content overflow-scroll="true" padding="true" class="details-content has-header">
+	<ion-content overflow-scroll="true" padding="true" class="national-back has-header">
+
+
+		<ul class="polaroids large-block-grid-4 small-block-grid-2">
+			<li ng-repeat="pl in polaroids">
+				<a title="{{pl.title}}">
+					<img ng-src="{{pl.src}}">
+				</a>
+			</li>
+		</ul>
+
 
 		<ion-pull-up-footer class="bar-dark"
 		                    on-expand="footerExpand()"

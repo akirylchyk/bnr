@@ -9,15 +9,15 @@
 
 
 			cardTypes = [{
-				title: 'Нацыяналістычная хроніка ->',
+				title: 'Удзельнiкi',
 				state: 'tabs.chronicleNational',
 				image: 'css/img/6.jpg'
 			}, {
-				title: 'Савецкая хроніка ->',
+				title: 'Рэпрэсii',
 				state: 'tabs.chronicleSoviet',
 				image: 'css/img/8.jpg'
 			}, {
-				title: 'Сучасная хроніка ->',
+				title: 'Сучаснiкi',
 				state: 'tabs.chronicleModern',
 				image: 'css/img/9.jpg'
 			}],

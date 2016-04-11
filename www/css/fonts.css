@@ -22,6 +22,10 @@
 	font-family: "Times New Roman", serif;
 }
 
+.impact-font {
+	font-family: Impact, serif;
+}
+
 /* cyrillic */
 @font-face {
 	font-family: 'Neucha';

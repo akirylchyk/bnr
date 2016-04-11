@@ -1,40 +1,9 @@
 <ion-view title="Нацыяналістычная хроніка">
-	<ion-content overflow-scroll="true" padding="true" class="national-back has-header">
+	<ion-content overflow-scroll="true" padding="false" class="national-back has-header">
 
 		<div class="list card chronicle-slide">
 			<morph-carousel data-items="items" on-selected="selectedItem" show-value="number"></morph-carousel>
 		</div>
-
-		<div class="neucha-font">
-			<div class="row repression-row">
-				<div class="col"><span class="repression-element" ng-click="openPopover($event, 0)">X</span></div>
-				<div class="col"><span class="repression-element">O</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event, 1)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event, 2)">X</span></div>
-			</div>
-
-			<div class="row repression-row">
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-			</div>
-
-			<div class="row repression-row">
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-			</div>
-
-			<div class="row repression-row">
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element">O</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-			</div>
-		</div>
-
 
 		<!--<section id="cd-timeline" class="cd-container">-->
 		<!--<div ng-repeat="activity in timeline | filter: {year: selectedItem.number}">-->
@@ -53,6 +22,44 @@
 		<!--</div>-->
 		<!--</section>-->
 
+		<div ng-show="selectedItem.number === 1918">
+			<div class="circle">
+
+			</div>
+
+			<div class="bnr-text">
+				БНР
+			</div>
+
+			<div class="triangle">
+
+			</div>
+		</div>
+
+		<div ng-show="selectedItem.number === 1919">
+			<swipe-cards>
+				<!--<swipe-card on-card-swipe="cardSwiped($index)" id="start-card">-->
+				<!--Swipe down for a new card-->
+				<!--</swipe-card>-->
+				<swipe-card ng-repeat="card in cards"
+				            on-destroy="cardDestroyed($index)"
+				            on-card-swipe="cardSwiped($index)">
+					<div>
+						<div class="title text-center neucha-font">
+						</div>
+						<div class="image">
+							<img ng-src="{{card.image}}">
+						</div>
+						<div class="button-bar">
+
+							<button class="button button-clear button-dark" ng-click="goToDetails(index)">
+								<span class="neucha-font swipe-card-title">{{card.title}}</span>
+							</button>
+						</div>
+					</div>
+				</swipe-card>
+			</swipe-cards>
+		</div>
 
 		<ion-pull-up-footer class="bar-dark"
 		                    on-expand="footerExpand()"

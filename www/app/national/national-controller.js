@@ -6,10 +6,11 @@
 		'chronicle',
 		'$state',
 		'$ionicPopover',
-		'national'
+		'national',
+		'$ionicSwipeCardDelegate'
 	];
 
-	var controller = function ($scope, chronicle, $state, $ionicPopover, national) {
+	var controller = function ($scope, chronicle, $state, $ionicPopover, national, $ionicSwipeCardDelegate) {
 
 		window.scope = $scope;
 
@@ -50,6 +51,48 @@
 		});
 
 
+
+
+
+
+
+		var cardTypes = chronicle.getCards();
+
+		$scope.cards = [];
+
+		$scope.cards.push(angular.extend({}, cardTypes[0]));
+
+		$scope.cardSwiped = function (index) {
+			$scope.addCard(index);
+		};
+
+		$scope.cardDestroyed = function (index) {
+			$scope.cards.splice(index, 1);
+		};
+
+		$scope.addCard = function (index) {
+			$scope.index = $scope.index ? $scope.index : 0;
+			if (typeof index !== 'undefined') {
+				$scope.index = $scope.index < cardTypes.length - 1 ? $scope.index + 1 : 0;
+			}
+			$scope.cards.push(angular.extend({}, cardTypes[$scope.index]));
+		};
+
+		$scope.goAway = function () {
+			var card = $ionicSwipeCardDelegate.getSwipeableCard($scope);
+			card.swipe();
+		};
+
+
+
+
+
+
+
+
+
+
+
 		$scope.goToDetails = function (id) {
 			$state.go('tabs.chronicleDetails', {id: id});
 		};
@@ -58,7 +101,7 @@
 
 		$scope.items = national.getTimelineItems();
 
-		$scope.selectedItem = $scope.items[24];
+		$scope.selectedItem = $scope.items[18];
 
 	};
 

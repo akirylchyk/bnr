@@ -1,0 +1,16 @@
+.intro-back {
+	background-color: #444;
+	color: #fff;
+}
+
+.intro-title {
+	font-size: 20px;
+	height: 50%;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.intro-text {
+	height: 50%;
+	text-align: justify;
+}

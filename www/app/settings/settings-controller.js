@@ -2,12 +2,17 @@
 	'use strict';
 
 	var injections = [
-		'$scope'
+		'$scope',
+		'$state'
 	];
 
-	var controller = function ($scope, $ionicSwipeCardDelegate) {
+	var controller = function ($scope, $state) {
 
 		window.scope = $scope;
+
+		$scope.goToSignUp = function () {
+			$state.go('signup');
+		}
 
 	};
 

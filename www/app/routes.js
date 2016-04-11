@@ -22,6 +22,12 @@ angular.module('app.routes', ['ionicUIRouter'])
 		 /page1/tab4/page2
 		 */
 
+			.state('intro', {
+				url: '/intro',
+				templateUrl: 'app/intro/intro.html',
+				controller: 'introController'
+			})
+
 			.state('login', {
 				url: '/login',
 				templateUrl: 'app/login/login.html',
@@ -100,6 +106,6 @@ angular.module('app.routes', ['ionicUIRouter'])
 				abstract: true
 			});
 
-		$urlRouterProvider.otherwise('/login')
+		$urlRouterProvider.otherwise('/intro')
 
 	});

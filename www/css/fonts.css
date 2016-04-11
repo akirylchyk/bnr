@@ -6,6 +6,22 @@
 	font-family: 'Roboto Slab', serif;
 }
 
+.versa-font {
+	font-family: 'Versa-SemiBold', serif;
+}
+
+.truth-font {
+	font-family: 'Real Truth', serif;
+}
+
+.helvetica-font {
+	font-family: Helvetica, serif;
+}
+
+.times-font {
+	font-family: "Times New Roman", serif;
+}
+
 /* cyrillic */
 @font-face {
 	font-family: 'Neucha';
@@ -22,4 +38,16 @@
 	font-weight: 400;
 	src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url("fonts/slab.woff2") format('woff2');
 	unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Versa-SemiBold';
+	src: url("fonts/versa.woff2");
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Real Truth';
+	src: url("fonts/truth.ttf");
 }

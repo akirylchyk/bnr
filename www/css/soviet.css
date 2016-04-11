@@ -1,0 +1,19 @@
+.soviet-date {
+	font-size: 36px;
+	font-weight: bold;
+	border: 1px solid white;
+	margin: 10px;
+	padding: 10px;
+}
+
+.soviet-date-wrapper {
+	margin-top: 20px;
+}
+
+.ion-chevron-right.ion-lg:before, .ion-chevron-left.ion-lg:before {
+	font-size: 22px;
+}
+
+.gallery-view {
+	margin-top: 40px;
+}

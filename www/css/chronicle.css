@@ -2,41 +2,72 @@
 	background-image: url("img/styles/paper.png");
 }
 
-.national-card {
-	background-image: url("img/6.jpg");
-	background-size: 100% 100%;
-	width: 100%;
-	height: 44%;
-	opacity: 0.6;
-}
+/*.national-card {*/
+/*background-image: url("img/6.jpg");*/
+/*background-size: 100% 100%;*/
+/*width: 100%;*/
+/*height: 44%;*/
+/*opacity: 0.6;*/
+/*}*/
 
-.soviet-card {
-	background-image: url("img/8.jpg");
-	background-size: 100% 100%;
-	width: 100%;
-	height: 44%;
-}
-
-.modern-card {
-	background-image: url("img/9.jpg");
-	background-size: 100% 100%;
-	width: 100%;
-	height: 44%;
-}
-
-.modern-card, .soviet-card {
-	margin-top: 5px;
-}
-
-.button-card {
-	position: absolute;
-	z-index: 999;
-}
-
-/*.wrapper-card {*/
-/*background-color: black;*/
-/*opacity: 0.8;*/
+/*.soviet-card {*/
+/*background-image: url("img/8.jpg");*/
 /*background-size: 100% 100%;*/
 /*width: 100%;*/
 /*height: 44%;*/
 /*}*/
+
+/*.modern-card {*/
+/*background-image: url("img/9.jpg");*/
+/*background-size: 100% 100%;*/
+/*width: 100%;*/
+/*height: 44%;*/
+/*}*/
+
+/*.modern-card, .soviet-card {*/
+/*margin-top: 5px;*/
+/*}*/
+
+/*.button-card {*/
+/*position: absolute;*/
+/*z-index: 999;*/
+/*}*/
+
+.card.chronicle-card {
+	display: table;
+	width: 100%;
+	height: 33%;
+	margin: 1px 0;
+	font-size: 30px;
+	text-align: center;
+	padding: 0;
+}
+
+.card.chronicle-card:first-child {
+	height: 32%;
+	margin: 3px 0;
+	font-size: 25px;
+}
+
+.card.chronicle-card:last-child {
+	font-size: 25px;
+}
+
+.soviet-card {
+	background-color: #a72523;
+	color: #fff;
+}
+
+.national-card {
+	background-color: #d7e3e6;
+}
+
+.modern-card {
+	background-color: #009688;
+	color: #fff;
+}
+
+.soviet-card, .national-card, .modern-card {
+	display: table-cell;
+	vertical-align: middle;
+}

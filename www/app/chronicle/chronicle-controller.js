@@ -11,9 +11,8 @@
 
 		window.scope = $scope;
 
-		$scope.goToDetails = function (id) {
-			id = typeof id === 'undefined' ? 0 : id;
-			$state.go(cardTypes[id].state);
+		$scope.goToDetails = function (state) {
+			$state.go(state);
 		};
 
 		var cardTypes = chronicle.getCards();

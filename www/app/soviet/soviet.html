@@ -1,15 +1,13 @@
 <ion-view title="Савецкая хроніка">
-	<ion-content overflow-scroll="true" padding="true" class="national-back has-header">
+	<ion-content overflow-scroll="true" padding="true" class="soviet-back has-header">
 
+		<div class="slab-font text-center soviet-date-wrapper">
+			<span class="ion-chevron-left ion-lg" ng-click="prev()"></span>
+			<span class="soviet-date">{{year}}</span>
+			<span class="ion-chevron-right ion-lg" ng-click="next()"></span>
+		</div>
 
-		<ul class="polaroids large-block-grid-4 small-block-grid-2">
-			<li ng-repeat="pl in polaroids">
-				<a title="{{pl.title}}">
-					<img ng-src="{{pl.src}}">
-				</a>
-			</li>
-		</ul>
-
+		<ion-gallery ion-gallery-items="items" ng-show="year === 1919"></ion-gallery>
 
 		<ion-pull-up-footer class="bar-dark"
 		                    on-expand="footerExpand()"

@@ -21,10 +21,8 @@
 }
 
 .soviet-back {
-}
-
-.modern-back {
-	background-image: url('img/styles/modern-paper.jpg');
+	background: linear-gradient(141deg, #B72624 0%, #AE2624 51%, #a72523 75%);
+	color: white;
 }
 
 .bar-stable.bar.bar-header, .tabs-stable > .tabs, .tabs.tabs-stable {

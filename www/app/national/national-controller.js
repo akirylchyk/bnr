@@ -30,7 +30,7 @@
 		});
 
 		$scope.openPopover = function ($event, index) {
-			$scope.repression = repressionItems[index]
+			$scope.repression = repressionItems[index];
 			$scope.popover.show($event);
 		};
 		$scope.closePopover = function () {
@@ -58,7 +58,7 @@
 
 		$scope.items = national.getTimelineItems();
 
-		$scope.selectedItem = $scope.items[18];
+		$scope.selectedItem = $scope.items[24];
 
 	};
 

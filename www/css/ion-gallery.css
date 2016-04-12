@@ -2,7 +2,6 @@
 	position: relative;
 	overflow: hidden;
 	margin: 2px;
-	transform: rotate(-8deg);
 }
 
 .gallery-view .image-container img {
@@ -28,7 +27,7 @@
 
 .imageView .headerView {
 	background-image: none;
-	background-color: #a72523;
+	background-color: #444;
 }
 
 .imageView .gallery-slide-view {
@@ -50,7 +49,7 @@
 .imageView .listContainer {
 	width: 100%;
 	height: 100%;
-	background-color: #a72523;
+	background-color: #444;
 }
 
 .imageView .hideAll {

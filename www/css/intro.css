@@ -1,5 +1,5 @@
 .intro-back {
-	background-color: #444;
+	background: linear-gradient(141deg, #B72624 0%, #AE2624 51%, #a72523 75%);
 	color: #fff;
 }
 
@@ -7,11 +7,18 @@
 	font-size: 20px;
 	height: 50%;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 30px;
 }
 
 .intro-text {
 	height: 50%;
 	text-align: justify;
 	font-size: 12px;
+}
+
+.intro-logo {
+	background: no-repeat top url("img/styles/intro.png");
+	height: 70%;
+	width: 100%;
+	margin-bottom: 20px;
 }

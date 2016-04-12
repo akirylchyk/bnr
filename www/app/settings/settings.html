@@ -1,10 +1,45 @@
 <ion-view title="Налады">
 	<ion-content overflow-scroll="true" padding="true" class="has-header">
-		<div class="settings-back settings-create">
-			<div class="">
+		<div class="login-hello" ng-show="user">
+			Прывітанне,  {{user}}!
+		<div>
+			<ul class="list">
+				<li class="item item-toggle">
+					Опцыя 1
+					<label class="toggle toggle-balanced">
+						<input type="checkbox">
+						<div class="track">
+							<div class="handle"></div>
+						</div>
+					</label>
+				</li>
+				<li class="item item-toggle">
+					Опцыя 2
+					<label class="toggle toggle-balanced">
+						<input type="checkbox">
+						<div class="track">
+							<div class="handle"></div>
+						</div>
+					</label>
+				</li>
+				<li class="item item-toggle">
+					Опцыя 3
+					<label class="toggle toggle-balanced">
+						<input type="checkbox">
+						<div class="track">
+							<div class="handle"></div>
+						</div>
+					</label>
+				</li>
+			</ul>
+			<button class="button button-balanced">
+				Захаваць
+			</button>
 
-			</div>
-			<button class="button button-balanced" ng-click="goToSignUp()">
+		</div>
+		</div>
+		<div class="settings-back settings-create" ng-show="!user">
+			<button class="button button-balanced" ng-click="openModal()">
 				Стварыць акаўнт
 			</button>
 			<button class="button button-positive ion-social-facebook settings-social"></button>
@@ -13,3 +48,29 @@
 
 	</ion-content>
 </ion-view>
+
+<script id="register.html" type="text/ng-template">
+	<ion-modal-view class="login-content">
+		<ion-header-bar class="login-header">
+			<h1 class="title">Рэгістрацыя</h1>
+		</ion-header-bar>
+		<ion-content>
+			<div class="ion-ios-people-outline login-icon">
+
+			</div>
+			<form class="login-form list">
+				<ion-list>
+					<label class="item item-input" name="Username">
+						<input type="text" placeholder="Імя" ng-model="name">
+					</label>
+					<label class="item item-input" name="Password">
+						<input type="password" placeholder="Пароль" ng-model="password">
+					</label>
+				</ion-list>
+				<div class="spacer login-spacer"></div>
+				<a ng-click="closeModal(name, password)" id="login-button1"
+				   class="button button-balanced button-block icon-right ion-log-in">Стварыць акаўнт</a>
+			</form>
+		</ion-content>
+	</ion-modal-view>
+</script>

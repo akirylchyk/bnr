@@ -1,6 +1,5 @@
 .login-content {
-	background-image: url("img/login.jpg");
-	background-size: 100% 100%;
+	background: #444;
 }
 
 .login-push {
@@ -8,8 +7,27 @@
 	width: 100%;
 }
 
-.login-form .item-input {
-	opacity: 0.7;
+.login-header {
+	background: #444;
+}
+
+.login-icon {
+	color: #fff;
+	font-size: 100px;
+	text-align: center;
+}
+
+.login-hello {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+
+.login-hello .item-toggle {
+	border: none;
+	margin-top: 20px;
+	color: #fff;
+	background: #333;
 }
 
 .national-back.has-tabs, .soviet-back.has-tabs, .modern-back.has-tabs {
@@ -17,16 +35,16 @@
 }
 
 .national-back {
-	background: linear-gradient(141deg, #FCFCFC  0%, #F5F5F5 51%, #EFEFEF 75%);
+	background: linear-gradient(141deg, #FCFCFC 0%, #F5F5F5 51%, #EFEFEF 75%);
 }
 
 .modern-back {
-	background: white;
+	background: linear-gradient(141deg, #222 0%, #333 51%, #444 75%);
 }
 
 .soviet-back {
 	background: linear-gradient(141deg, #B72624 0%, #AE2624 51%, #a72523 75%);
-	color: white;
+	color: #fff;
 }
 
 .bar-stable.bar.bar-header, .tabs-stable > .tabs, .tabs.tabs-stable {

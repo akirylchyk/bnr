@@ -10,3 +10,9 @@
 .modern-word-by.translated {
 	text-decoration: line-through;
 }
+
+.modern-bnr {
+	color: #fff;
+	font-size: 100px;
+	text-align: center;
+}

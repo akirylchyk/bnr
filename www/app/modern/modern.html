@@ -1,7 +1,25 @@
 <ion-view title="Сучасная хроніка">
 	<ion-content overflow-scroll="true" padding="true" class="modern-back has-header">
 
-		<div class="modern-bnr helvetica-font">Б<span class="ion-help"></span>Р</div>
+		<div class="slab-font text-center modern-date-wrapper">
+			<span class="ion-chevron-left ion-lg" ng-click="prev()"></span>
+			<span class="modern-date">{{year}}</span>
+			<span class="ion-chevron-right ion-lg" ng-click="next()"></span>
+		</div>
+
+		<div ng-show="year === 1925">
+			<div class="modern-bnr impact-font">
+				Б<span class="ion-help"></span>Р
+			</div>
+			<div class="modern-sluck">
+
+			</div>
+		</div>
+
+		<div ng-show="year === 1926">
+			<ion-gallery ion-gallery-items="items"></ion-gallery>
+
+		</div>
 
 
 	</ion-content>

@@ -13,6 +13,30 @@
 
 .modern-bnr {
 	color: #fff;
-	font-size: 100px;
+	font-size: 160px;
 	text-align: center;
+}
+
+.modern-date {
+	font-size: 36px;
+	color: white;
+	font-weight: bold;
+	border: 2px solid;
+	border-color: #e4e0fb #b6b1d1 #b6b1d1;
+	border-radius: 6px;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	margin: 10px;
+	padding: 10px;
+}
+
+.modern-date-wrapper {
+	margin: 40px 0;
+	color: #fff;
+}
+
+.modern-sluck {
+	background: url("img/repression/sluck.jpg") no-repeat;
+	width: 343px;
+	height: 257px;
+	margin: auto;
 }

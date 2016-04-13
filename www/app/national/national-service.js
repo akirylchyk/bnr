@@ -35,9 +35,9 @@
 				{number: 1925}
 			],
 			repressionItems = [
-				{name: 'Браніслаў Тарашкевіч', photo: 'css/img/repression/bt.jpg'},
-				{name: 'Вацлаў Ластоўскі', photo: 'css/img/repression/vl.jpg'},
-				{name: 'Максім Гарэцкі', photo: 'css/img/repression/mg.jpg'}
+				{name: 'Браніслаў Тарашкевіч', photo: 'css/img/repression/bt.jpg', info: 'Растраляны ў 1948 годзе'},
+				{name: 'Вацлаў Ластоўскі', photo: 'css/img/repression/vl.jpg', info: 'Растраляны ў 1942 годзе'},
+				{name: 'Максім Гарэцкі', photo: 'css/img/repression/mg.jpg', info: 'Растраляны ў 1933 годзе'}
 			];
 
 		service.getTimelineItems = function () {

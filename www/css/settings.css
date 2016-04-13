@@ -7,6 +7,14 @@
 	margin-top: 55% !important;
 }
 
-.settings-social{
+.settings-social {
 	font-size: 25px;
+}
+
+.settings-options {
+	text-align: left;
+}
+
+.settings-save {
+	width: 100%;
 }

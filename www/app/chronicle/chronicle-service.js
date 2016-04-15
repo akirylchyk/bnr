@@ -13,7 +13,7 @@
 				state: 'tabs.chronicleNational',
 				image: 'css/img/6.jpg'
 			}, {
-				title: 'Рэпрэсii',
+				title: 'Максiм Гарэцкi',
 				state: 'tabs.chronicleSoviet',
 				image: 'css/img/8.jpg'
 			}, {

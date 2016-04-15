@@ -11,11 +11,19 @@
 
 		<div ng-show="selectedYear.number === 1910" ng-include="'app/national/templates/u.html'"></div>
 
-		<div ng-show="selectedYear.number === 1917" ng-include="'app/national/templates/sun.html'"></div>
+		<div ng-show="selectedYear.number === 1914" ng-include="'app/national/templates/lacinka.html'"></div>
 
-		<div ng-show="selectedYear.number === 1918" ng-include="'app/national/templates/circle.html'"></div>
+		<div ng-show="selectedYear.number === 1916" ng-include="'app/national/templates/tarashkevich.html'"></div>
 
-		<div ng-show="selectedYear.number === 1919">
+		<div ng-show="selectedYear.number === 1917" ng-include="'app/national/templates/udzelniki.html'"></div>
+
+		<div ng-show="selectedYear.number === 1918" ng-include="'app/national/templates/sun.html'"></div>
+
+		<div ng-show="selectedYear.number === 1919" ng-include="'app/national/templates/circle.html'"></div>
+
+		<div ng-show="selectedYear.number === 1921" ng-include="'app/national/templates/map.html'"></div>
+
+		<div ng-show="selectedYear.number === 1920">
 			<swipe-cards>
 				<!--<swipe-card on-card-swipe="cardSwiped($index)" id="start-card">-->
 				<!--Swipe down for a new card-->
@@ -38,9 +46,16 @@
 					</div>
 				</swipe-card>
 			</swipe-cards>
+			<div class="quote-wrapper">
+				<p class="quote-text-repression">
+					Акрамя асуджаных у 1920—1930-я, рэпрэсавана і выслана за межы БССР больш за 250 тыс.
+					Усяго з 1954 да пачатку 2000 року ў Беларусі рэабілітавана больш за 200 тыс. ахвяраў палітычных рэпрэсіяў
+				</p>
+
+			</div>
 		</div>
 
-		<div ng-show="selectedYear.number === 1920" ng-include="'app/national/templates/bssr.html'">
+		<div ng-show="selectedYear.number === 1922" ng-include="'app/national/templates/bssr.html'">
 
 	</ion-content>
 </ion-view>

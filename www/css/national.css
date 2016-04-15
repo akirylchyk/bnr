@@ -79,27 +79,107 @@
 	margin: 0;
 }
 
+.sun-postcard {
+	position: absolute;
+	bottom: 80px;
+}
+
 .sun-postcard img {
-	background: url("img/national/postcard.jpg");
 	width: 70%;
 	height: auto;
-	margin-bottom: 10px;
 }
 
-.sun-postcard-footer {
-	height: 2%;
+.map-title {
+	font-size: 50px;
+	text-align: center;
 }
 
-.u-left{
+.map-postcard {
+	position: absolute;
+	bottom: 80px;
+}
+
+.map-postcard img {
+	width: 95%;
+	height: auto;
+}
+
+.map-delegation {
+	font-size: 26px;
+	line-height: 60px;
+}
+
+.map-forbid {
+	font-size: 14px;
+	line-height: 1px;
+}
+
+.u-left {
 	font-size: 400px;
 	position: absolute;
 	bottom: 40%;
 	left: -37%;
 }
 
-.u-right{
+.u-right {
 	font-size: 400px;
 	position: absolute;
 	bottom: 40%;
 	right: -37%;
+}
+
+.u-text {
+	font-size: 14px;
+	text-align: justify;
+	padding: 0 25px;
+}
+
+.quote-text-repression {
+	font-size: 14px;
+	text-align: justify;
+	padding: 0 20px;
+	position: absolute;
+	bottom: 100px;
+}
+
+.lacinka {
+	text-align: justify;
+}
+
+.lacinka span {
+	display: inline-block;
+	padding: 12px;
+	margin: 5px;
+	font-size: 38px;
+	border: 1px solid black;
+}
+
+.lacinka-title {
+	font-size: 45px;
+	margin: 55px 0;
+	line-height: 35px;
+}
+
+.udzelniki-title {
+	font-size: 26px;
+	text-align: center;
+}
+
+.taras-letter {
+	font-size: 220px;
+	font-weight: bold;
+	position: absolute;
+	text-align: left;
+	top: 42%;
+	right: 33%;
+}
+
+.taras-grammar {
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: bold;
+	position: absolute;
+	text-align: left;
+	top: 57%;
+	left: -2%;
 }

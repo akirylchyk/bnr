@@ -24,7 +24,7 @@
 }
 
 .swipe-card-title {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 swipe-card {
@@ -33,10 +33,10 @@ swipe-card {
 	border: 1px solid #fff;
 	box-shadow: 0 2px 15px #333;
 	display: none;
-	position: fixed;
+	margin: auto;
 	-webkit-transform: scale(1, 1);
 	top: 15%;
-	width: 100%;
+	width: 75%;
 	box-sizing: border-box;
 	border-radius: 4px;
 	overflow: hidden;

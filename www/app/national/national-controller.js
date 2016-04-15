@@ -7,10 +7,11 @@
 		'$state',
 		'$ionicPopover',
 		'national',
-		'$ionicSwipeCardDelegate'
+		'$ionicSwipeCardDelegate',
+		'years'
 	];
 
-	var controller = function ($scope, chronicle, $state, $ionicPopover, national, $ionicSwipeCardDelegate) {
+	var controller = function ($scope, chronicle, $state, $ionicPopover, national, $ionicSwipeCardDelegate, years) {
 
 		window.scope = $scope;
 
@@ -99,9 +100,9 @@
 
 		$scope.timeline = chronicle.getTimeline();
 
-		$scope.items = national.getTimelineItems();
+		$scope.years = years.getYears();
 
-		$scope.selectedItem = $scope.items[18];
+		$scope.selectedYear = $scope.years[18];
 
 	};
 

@@ -65,3 +65,27 @@
 	right: 104px;
 	transform: rotate(11deg);
 }
+
+.idea-orn {
+	color: #B72624;
+	font-size: 35px;
+	line-height: 42px;
+	white-space: pre;
+	margin: 0;
+}
+
+.bssr-text {
+	white-space: pre;
+	margin: 0;
+}
+
+.sun-postcard img {
+	background: url("img/national/postcard.jpg");
+	width: 70%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.sun-postcard-footer {
+	height: 2%;
+}

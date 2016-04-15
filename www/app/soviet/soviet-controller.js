@@ -5,10 +5,11 @@
 		'$scope',
 		'soviet',
 		'$ionicPopover',
-		'national'
+		'national',
+		'years'
 	];
 
-	var controller = function ($scope, soviet, $ionicPopover, national) {
+	var controller = function ($scope, soviet, $ionicPopover, national, years) {
 
 		window.scope = $scope;
 
@@ -50,9 +51,10 @@
 		});
 
 
+		$scope.years = years.getYears();
 
-		$scope.year = 1925;
-
+		$scope.selectedYear = $scope.years[18];
+		
 		$scope.items = [
 			{
 				src: '../css/img/1.jpg',

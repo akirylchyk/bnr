@@ -1,13 +1,11 @@
 <ion-view title="Савецкая хроніка">
 	<ion-content overflow-scroll="true" padding="true" class="soviet-back has-header">
 
-		<div class="slab-font text-center soviet-date-wrapper">
-			<span class="ion-chevron-left ion-lg" ng-click="prev()"></span>
-			<span class="soviet-date">{{year}}</span>
-			<span class="ion-chevron-right ion-lg" ng-click="next()"></span>
+		<div class="list card chronicle-slide">
+			<morph-carousel class="soviet-carousel" data-items="years" on-selected="selectedYear" show-value="number"></morph-carousel>
 		</div>
 
-		<div ng-show="year === 1925">
+		<div ng-show="selectedYear.number === 1925">
 			<div class="neucha-font">
 				<div class="row repression-row">
 					<div class="col"><span class="repression-element" ng-click="openPopover($event, 0)">X</span></div>
@@ -130,7 +128,7 @@
 			</div>
 		</div>
 
-		<div ng-show="year === 1926">
+		<div ng-show="selectedYear.number === 1926">
 			<ion-gallery ion-gallery-items="items"></ion-gallery>
 
 			<!--<ion-pull-up-footer class="bar-dark"-->

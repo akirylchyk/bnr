@@ -77,3 +77,12 @@ morph-carousel {
 	position: absolute;
 	z-index: 10;
 }
+
+.soviet-carousel .morph-carousel__separator, .modern-carousel .morph-carousel__separator {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+.soviet-carousel .morph-carousel__item, .modern-carousel .morph-carousel__item {
+	color: white;
+}

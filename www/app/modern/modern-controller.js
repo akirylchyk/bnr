@@ -3,10 +3,11 @@
 
 	var injections = [
 		'$scope',
-		'modern'
+		'modern',
+		'years'
 	];
 
-	var controller = function ($scope, modern) {
+	var controller = function ($scope, modern, years) {
 
 		window.scope = $scope;
 
@@ -44,11 +45,11 @@
 
 		$scope.translated = false;
 
-		$scope.selectedItem = $scope.items[18];
+		$scope.years = years.getYears();
+
+		$scope.selectedYear = $scope.years[18];
 
 		$scope.words = modern.getWords();
-
-		$scope.year = 1925;
 
 		$scope.prev = function () {
 			$scope.year--;

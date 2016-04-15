@@ -26,6 +26,10 @@
 	font-family: Impact, serif;
 }
 
+.orn-font {
+	font-family: Bierahinia, serif;
+}
+
 /* cyrillic */
 @font-face {
 	font-family: 'Neucha';
@@ -54,4 +58,10 @@
 @font-face {
 	font-family: 'Real Truth';
 	src: url("fonts/truth.ttf");
+}
+
+/* ornament */
+@font-face {
+	font-family: 'Bierahinia';
+	src: url("fonts/bierahinia.ttf");
 }

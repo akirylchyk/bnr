@@ -54,16 +54,16 @@
 }
 
 .soviet-card {
-	background: linear-gradient(141deg, #DA2D2B  0%, #b72523 51%, #a72523 75%);
+	background: linear-gradient(141deg, #a32928 0%, #972827 51%, #902827 75%);
 	color: #fff;
 }
 
 .national-card {
-	background: linear-gradient(141deg, #FCFCFC  0%, #F5F5F5 51%, #EFEFEF 75%);
+	background: linear-gradient(141deg, #E7DACD 0%, #DBCEC1 51%, #D0C3B6 75%);
 }
 
 .modern-card {
-	background: linear-gradient(141deg, #222 0%, #333 51%, #444 75%);
+	background: linear-gradient(141deg, #57604C 0%, #515A47 51%, #49523F 75%);
 	color: #fff;
 }
 

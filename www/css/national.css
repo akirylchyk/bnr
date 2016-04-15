@@ -89,3 +89,17 @@
 .sun-postcard-footer {
 	height: 2%;
 }
+
+.u-left{
+	font-size: 400px;
+	position: absolute;
+	bottom: 40%;
+	left: -37%;
+}
+
+.u-right{
+	font-size: 400px;
+	position: absolute;
+	bottom: 40%;
+	right: -37%;
+}

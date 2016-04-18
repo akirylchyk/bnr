@@ -2,173 +2,23 @@
 	<ion-content overflow-scroll="true" padding="true" class="soviet-back has-header">
 
 		<div class="list card chronicle-slide">
-			<morph-carousel class="soviet-carousel" data-items="years" on-selected="selectedYear" show-value="number"></morph-carousel>
+			<morph-carousel class="soviet-carousel"
+			                data-items="years"
+			                on-selected="selectedYear"
+			                show-value="number"></morph-carousel>
 		</div>
 
-		<div ng-show="selectedYear.number === 1925">
-			<div class="neucha-font">
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event, 0)">X</span></div>
-					<div class="col"><span class="repression-element">O</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event, 1)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event, 2)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
+		<div ng-show="selectedYear.number === 1918" ng-include="'app/soviet/templates/kaizer.html'"></div>
 
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
+		<div ng-show="selectedYear.number === 1919" ng-include="'app/soviet/templates/bssr.html'"></div>
 
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
+		<div ng-show="selectedYear.number === 1920" ng-include="'app/soviet/templates/nezal.html'"></div>
 
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element">O</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
-
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element">O</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
-
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element">O</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
-
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element">O</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
-				<div class="row repression-row">
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element">O</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-					<div class="col"><span class="repression-element" ng-click="openPopover($event)">X</span></div>
-				</div>
-			</div>
-		</div>
-
-		<div ng-show="selectedYear.number === 1926">
+		<div ng-show="selectedYear.number === 1924">
 			<ion-gallery ion-gallery-items="items"></ion-gallery>
-
-			<!--<ion-pull-up-footer class="bar-dark"-->
-			                    <!--on-expand="footerExpand()"-->
-			                    <!--on-collapse="footerCollapse()"-->
-			                    <!--initial-state="minimized"-->
-			                    <!--default-behavior="expand">-->
-				<!--<ion-pull-up-handle width="100"-->
-				                    <!--height="25"-->
-				                    <!--toggle="ion-chevron-up ion-chevron-down"-->
-				                    <!--class="ion-pull-up-handle">-->
-					<!--<i class="icon ion-chevron-up"></i>-->
-				<!--</ion-pull-up-handle>-->
-
-				<!--<ion-pull-up-content class="details-discuss" scroll="false">-->
-					<!--<div class="row">-->
-
-					<!--</div>-->
-					<!--<div class="row">-->
-
-					<!--</div>-->
-				<!--</ion-pull-up-content>-->
-
-			<!--</ion-pull-up-footer>-->
 		</div>
+
+		<div ng-show="selectedYear.number === 1925" ng-include="'app/soviet/templates/repressions.html'"></div>
 
 	</ion-content>
 </ion-view>
-
-
-<script id="my-popover.html" type="text/ng-template">
-	<ion-popover-view>
-		<ion-header-bar class="repression-title neucha-font">
-			<span>{{repression.name}}</span>
-		</ion-header-bar>
-		<ion-content class="repression-content">
-			<img class="repression-img" ng-src="{{repression.photo}}">
-		</ion-content>
-		<ion-footer-bar class="repression-footer">
-			<span>{{repression.info}}</span>
-		</ion-footer-bar>
-	</ion-popover-view>
-</script>

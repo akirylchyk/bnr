@@ -30,6 +30,14 @@
 	font-family: Bierahinia, serif;
 }
 
+.gable-font {
+	font-family: "GableAntiqueCndSG TT Regular", serif;
+}
+
+.german-font {
+	font-family: "PlainGermanica", serif;
+}
+
 /* cyrillic */
 @font-face {
 	font-family: 'Neucha';
@@ -50,8 +58,20 @@
 
 /* latin */
 @font-face {
+	font-family: 'GableAntiqueCndSG TT Regular';
+	src: url("fonts/gable.ttf");
+}
+
+/* latin */
+@font-face {
 	font-family: 'Versa-SemiBold';
 	src: url("fonts/versa.woff2");
+}
+
+/* latin */
+@font-face {
+	font-family: 'PlainGermanica';
+	src: url("fonts/germanica.ttf");
 }
 
 /* cyrillic */

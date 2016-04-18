@@ -17,3 +17,89 @@
 .gallery-view {
 	margin-top: 40px;
 }
+
+.gramata-text {
+	font-size: 12px;
+	text-align: justify;
+	margin-top: 45px;
+}
+
+.kaizer-text {
+	font-size: 70px;
+	text-align: center;
+	line-height: 80px;
+}
+
+.kaizer-bnr-text {
+	text-align: center;
+}
+
+.bnr-black-line {
+	background-color: black;
+	width: 105%;
+	transform: rotate(-40deg);
+	position: absolute;
+	bottom: 10%;
+	right: -36%;
+	text-align: center;
+}
+
+.nezal-revert {
+	font-size: 40px;
+	text-align: center;
+	margin-top: 45%;
+	line-height: 35px;
+}
+
+.nezal-mirror {
+	transform: rotate(-180deg) scale(1, -1);
+}
+
+.reforma-text {
+	margin-top: 15%;
+	text-align: justify;
+	padding: 10px 35px;
+}
+
+.narkom-text {
+	font-size: 30px;
+	text-align: right;
+	padding: 0 35px;
+}
+
+.bnr-cut {
+	border-left: 1px solid #fff;
+	display: inline-block;
+	font-size: 70px;
+	line-height: 40px;
+	height: 70px;
+	padding: 15px 0 15px;
+	position: absolute;
+	background-color: #972827;
+}
+
+.bnr-cut:first-child {
+	border-left: none;
+}
+
+.bnr-cut-wrapper {
+	text-align: center;
+	margin-top: 40%;
+}
+
+.bnr-cut.b {
+	left: 33%;
+}
+
+.bnr-cut.n {
+	left: 41%;
+}
+
+.bnr-cut.r {
+	left: 50%;
+}
+
+.bnr-cut.o {
+	width: 25px;
+	left: 59%;
+}

@@ -14,11 +14,27 @@
 
 		<div ng-show="selectedYear.number === 1920" ng-include="'app/soviet/templates/nezal.html'"></div>
 
-		<div ng-show="selectedYear.number === 1924">
-			<ion-gallery ion-gallery-items="items"></ion-gallery>
-		</div>
+		<div ng-show="selectedYear.number === 1921" ng-include="'app/soviet/templates/reforma.html'"></div>
+
+		<div ng-show="selectedYear.number === 1922" ng-include="'app/soviet/templates/bnr.html'"></div>
+
+		<div ng-show="selectedYear.number === 1924" ng-include="'app/soviet/templates/gallery.html'"></div>
 
 		<div ng-show="selectedYear.number === 1925" ng-include="'app/soviet/templates/repressions.html'"></div>
 
 	</ion-content>
 </ion-view>
+
+<script id="soviet-popover.html" type="text/ng-template">
+	<ion-popover-view>
+		<ion-header-bar class="repression-title neucha-font">
+			<span>{{repression.name}}</span>
+		</ion-header-bar>
+		<ion-content class="repression-content">
+			<img class="repression-img" ng-src="{{repression.photo}}">
+		</ion-content>
+		<ion-footer-bar class="repression-footer">
+			<span>{{repression.info}}</span>
+		</ion-footer-bar>
+	</ion-popover-view>
+</script>

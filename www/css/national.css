@@ -172,6 +172,7 @@
 	text-align: left;
 	top: 42%;
 	right: 33%;
+	z-index: 2;
 }
 
 .taras-grammar {
@@ -182,4 +183,16 @@
 	text-align: left;
 	top: 57%;
 	left: -2%;
+	z-index: 2;
+}
+
+.taras-back {
+	height: 262px;
+	width: 252px;
+	position: absolute;
+	background: linear-gradient(141deg, #E7DACD 0%, #DBCEC1 51%, #D0C3B6 75%);
+	top: 31%;
+	left: 18%;
+	z-index: 1;
+	box-shadow: 7px 2px 13px #8C8C8C;
 }

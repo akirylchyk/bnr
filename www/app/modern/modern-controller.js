@@ -43,6 +43,41 @@
 		];
 
 
+
+
+		var cardTypes = modern.getCards();
+
+		$scope.cards = [];
+
+		$scope.cards.push(angular.extend({}, cardTypes[0]));
+
+		$scope.cardSwiped = function (index) {
+			$scope.addCard(index);
+		};
+
+		$scope.cardDestroyed = function (index) {
+			$scope.cards.splice(index, 1);
+		};
+
+		$scope.addCard = function (index) {
+			$scope.index = $scope.index ? $scope.index : 0;
+			if (typeof index !== 'undefined') {
+				$scope.index = $scope.index < cardTypes.length - 1 ? $scope.index + 1 : 0;
+			}
+			$scope.cards.push(angular.extend({}, cardTypes[$scope.index]));
+		};
+
+		$scope.goAway = function () {
+			var card = $ionicSwipeCardDelegate.getSwipeableCard($scope);
+			card.swipe();
+		};
+
+
+
+
+
+
+
 		$scope.translated = false;
 
 		$scope.years = years.getYears();

@@ -40,3 +40,14 @@
 	height: 257px;
 	margin: auto;
 }
+
+.mova-text {
+	font-size: 12px;
+	text-align: justify;
+}
+
+.points-postcard {
+	position: absolute;
+	bottom: 6%;
+	height: 80%;
+}

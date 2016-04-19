@@ -5,19 +5,19 @@
 			<morph-carousel class="modern-carousel" data-items="years" on-selected="selectedYear" show-value="number"></morph-carousel>
 		</div>
 
-		<div ng-show="selectedYear.number === 1925">
-			<div class="modern-bnr impact-font">
-				Б<span class="ion-help"></span>Р
-			</div>
-			<div class="modern-sluck">
 
-			</div>
-		</div>
 
-		<div ng-show="selectedYear.number === 1926">
-			<ion-gallery ion-gallery-items="items"></ion-gallery>
+		<div ng-show="selectedYear.number === 1918" ng-include="'app/modern/templates/mova.html'"></div>
 
-		</div>
+		<div ng-show="selectedYear.number === 1919" ng-include="'app/modern/templates/last.html'"></div>
+
+		<div ng-show="selectedYear.number === 1920" ng-include="'app/modern/templates/points.html'"></div>
+
+		<div ng-show="selectedYear.number === 1921" ng-include="'app/modern/templates/cards.html'"></div>
+
+		<div ng-show="selectedYear.number === 1922" ng-include="'app/modern/templates/sluck.html'"></div>
+
+		<div ng-show="selectedYear.number === 1925" ng-include="'app/modern/templates/gallery.html'"></div>
 
 
 	</ion-content>

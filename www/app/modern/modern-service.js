@@ -42,7 +42,27 @@
 				{by: 'Сымбаль', ru: 'Символ'},
 				{by: 'Барацьба', ru: 'Борьба'},
 				{by: 'Травень', ru: 'Май'}
-			];
+			],
+
+			cardTypes = [{
+				title: 'Удзельнiкi',
+				state: 'tabs.chronicleNational',
+				image: 'css/img/modern/polaroids/1.jpg'
+			}, {
+				title: 'Максiм Гарэцкi',
+				state: 'tabs.chronicleSoviet',
+				image: 'css/img/modern/polaroids/2.jpg'
+
+			}, {
+				title: 'Сучаснiкi',
+				state: 'tabs.chronicleModern',
+				image: 'css/img/modern/polaroids/3.jpg'
+
+			}, {
+				title: 'Максiм Гарэцкi',
+				state: 'tabs.chronicleSoviet',
+				image: 'css/img/modern/polaroids/4.jpg'
+			}];
 
 		service.getTimelineItems = function () {
 			return timelineItems;
@@ -50,6 +70,10 @@
 
 		service.getWords = function () {
 			return words;
+		};
+
+		service.getCards = function () {
+			return cardTypes;
 		};
 
 		return service;

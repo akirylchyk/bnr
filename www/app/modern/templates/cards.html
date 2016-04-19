@@ -1,0 +1,19 @@
+<swipe-cards>
+	<swipe-card ng-repeat="card in cards"
+	            on-destroy="cardDestroyed($index)"
+	            on-card-swipe="cardSwiped($index)">
+		<div>
+			<div class="title text-center">
+			</div>
+			<div class="image">
+				<img ng-src="{{card.image}}">
+			</div>
+			<div class="button-bar">
+
+				<button class="button button-clear button-dark" ng-click="goToDetails(index)">
+					<span class="swipe-card-title">{{card.title}}</span>
+				</button>
+			</div>
+		</div>
+	</swipe-card>
+</swipe-cards>

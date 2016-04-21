@@ -1,5 +1,5 @@
 .login-content {
-	background: #444;
+	background: #444141;
 }
 
 .login-push {
@@ -8,7 +8,7 @@
 }
 
 .login-header {
-	background: #444;
+	background: #444141;
 }
 
 .login-icon {
@@ -48,7 +48,8 @@
 }
 
 .bar-stable.bar.bar-header, .tabs-stable > .tabs, .tabs.tabs-stable {
-	background-color: #444;
+	background: #444141;
+	background-image: none;
 }
 
 .bar.bar-stable .title, .tabs-stable > .tabs, .tabs.tabs-stable, .back-button {

@@ -24,10 +24,7 @@
 		<div ng-show="selectedYear.number === 1921" ng-include="'app/national/templates/map.html'"></div>
 
 		<div ng-show="selectedYear.number === 1920">
-			<swipe-cards>
-				<!--<swipe-card on-card-swipe="cardSwiped($index)" id="start-card">-->
-				<!--Swipe down for a new card-->
-				<!--</swipe-card>-->
+			<swipe-cards class="center-swipe">
 				<swipe-card ng-repeat="card in cards"
 				            on-destroy="cardDestroyed($index)"
 				            on-card-swipe="cardSwiped($index)">
@@ -49,20 +46,21 @@
 			<div class="quote-wrapper">
 				<p class="quote-text-repression">
 					Акрамя асуджаных у 1920—1930-я, рэпрэсавана і выслана за межы БССР больш за 250 тыс.
-					Усяго з 1954 да пачатку 2000 року ў Беларусі рэабілітавана больш за 200 тыс. ахвяраў палітычных рэпрэсіяў
+					Усяго з 1954 да пачатку 2000 року ў Беларусі рэабілітавана больш за 200 тыс. ахвяраў палітычных
+					рэпрэсіяў
 				</p>
 
 			</div>
 		</div>
 
-		<div ng-show="selectedYear.number === 1922" ng-include="'app/national/templates/bssr.html'">
+		<div ng-show="selectedYear.number === 1922" ng-include="'app/national/templates/bssr.html'"></div>
 
 	</ion-content>
 </ion-view>
 
 <script id="my-popover.html" type="text/ng-template">
 	<ion-popover-view>
-		<ion-header-bar class="repression-title neucha-font">
+		<ion-header-bar class="repression-title helvetica-font">
 			<span>{{repression.name}}</span>
 		</ion-header-bar>
 		<ion-content class="repression-content">

@@ -38,6 +38,18 @@
 	font-family: "PlainGermanica", serif;
 }
 
+.trajan-font {
+	font-family: "Trajan Pro", serif;
+}
+
+.trajan-font-3 {
+	font-family: "Trajan Pro 3", serif;
+}
+
+.antiqua-font {
+	font-family: "Book Antiqua", seif;
+}
+
 /* cyrillic */
 @font-face {
 	font-family: 'Neucha';
@@ -84,4 +96,22 @@
 @font-face {
 	font-family: 'Bierahinia';
 	src: url("fonts/bierahinia.ttf");
+}
+
+/* latin */
+@font-face {
+	font-family: 'Trajan Pro';
+	src: url("fonts/TrajanPro-Regular.otf");
+}
+
+/* latin */
+@font-face {
+	font-family: 'Trajan Pro 3';
+	src: url("fonts/TrajanPro-Regular.otf");
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Book Antiqua';
+	src: url("fonts/Book Antiqua Regular.ttf");
 }

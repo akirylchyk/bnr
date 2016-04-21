@@ -44,8 +44,8 @@
 }
 
 .card.chronicle-card:first-child {
-	height: 32%;
-	margin: 3px 0;
+	height: 33%;
+	margin: 0;
 	font-size: 18px;
 }
 

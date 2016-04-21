@@ -199,3 +199,9 @@
 .popover {
 	width: 181px;
 }
+
+.center-swipe {
+	margin: 5% auto;
+	left: 0;
+	right: 0;
+}

@@ -19,25 +19,31 @@
 }
 
 .gramata-text {
-	font-size: 12px;
+	font-size: 1em;
 	text-align: justify;
-	margin-top: 45px;
+	margin-top: 15%;
 }
 
 .kaizer-text {
-	font-size: 70px;
+	font-size: 10em;
 	text-align: center;
-	line-height: 80px;
+	line-height: 1em;
+}
+
+.kaizer-text-wrapper {
+	margin-top: 20%;
 }
 
 .kaizer-bnr-text {
 	text-align: center;
+	font-size: 2em;
 }
 
 .bnr-black-line {
 	background-color: black;
 	width: 105%;
 	transform: rotate(-40deg);
+	-webkit-transform: rotate(-40deg);
 	position: absolute;
 	bottom: 10%;
 	right: -36%;
@@ -55,16 +61,11 @@
 	transform: rotate(-180deg) scale(1, -1);
 }
 
-.reforma-text {
-	margin-top: 15%;
-	text-align: justify;
-	padding: 10px 35px;
-}
-
 .narkom-text {
-	font-size: 30px;
-	text-align: right;
-	padding: 0 35px;
+	font-size: 3em;
+	text-align: center;
+	margin-top: 10%;
+	line-height: 1.1em;
 }
 
 .bnr-cut {
@@ -88,18 +89,22 @@
 }
 
 .bnr-cut.b {
-	left: 33%;
+	left: 43%;
 }
 
 .bnr-cut.n {
-	left: 41%;
+	left: 47%;
 }
 
 .bnr-cut.r {
-	left: 50%;
+	left: 51%;
 }
 
 .bnr-cut.o {
 	width: 25px;
-	left: 59%;
+	left: 55%;
+}
+
+.line-through {
+	text-decoration: line-through;
 }

@@ -76,6 +76,10 @@
 	font-size: 16px;
 }
 
+.quote-title {
+	font-size: 2em;
+}
+
 .quote-author {
 	font-size: 12px;
 	font-style: italic;

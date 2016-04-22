@@ -45,21 +45,21 @@
 			],
 
 			cardTypes = [{
-				title: 'Удзельнiкi',
+				title: 'Браніслаў Тарашкевіч',
 				state: 'tabs.chronicleNational',
 				image: 'css/img/modern/polaroids/1.jpg'
 			}, {
-				title: 'Максiм Гарэцкi',
+				title: 'Сцяпан Некрашэвіч',
 				state: 'tabs.chronicleSoviet',
 				image: 'css/img/modern/polaroids/2.jpg'
 
 			}, {
-				title: 'Сучаснiкi',
+				title: 'Кастусь Езавітаў',
 				state: 'tabs.chronicleModern',
 				image: 'css/img/modern/polaroids/3.jpg'
 
 			}, {
-				title: 'Максiм Гарэцкi',
+				title: 'Палута Бадунова',
 				state: 'tabs.chronicleSoviet',
 				image: 'css/img/modern/polaroids/4.jpg'
 			}];

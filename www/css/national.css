@@ -157,6 +157,10 @@
 	line-height: 1em;
 }
 
+.quote-text-repression.bottom-quote {
+	bottom: 11%;
+}
+
 .lacinka {
 	text-align: justify;
 }

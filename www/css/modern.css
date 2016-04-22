@@ -48,6 +48,15 @@
 
 .points-postcard {
 	position: absolute;
-	bottom: 6%;
+	bottom: 0%;
 	height: 80%;
+	left: 22%;
+}
+
+.big-polaroids swipe-card .image {
+	max-height: 425px;
+}
+
+.big-polaroids .swipe-cards {
+	margin-left: 40px;
 }

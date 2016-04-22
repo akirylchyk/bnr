@@ -8,19 +8,19 @@
 			                show-value="number"></morph-carousel>
 		</div>
 
-		<div ng-show="selectedYear.number === 1918" ng-include="'app/soviet/templates/kaizer.html'"></div>
+		<div ng-if="selectedYear.number === 1918" ng-include="'app/soviet/templates/kaizer.html'"></div>
 
-		<div ng-show="selectedYear.number === 1919" ng-include="'app/soviet/templates/bssr.html'"></div>
+		<div ng-if="selectedYear.number === 1919" ng-include="'app/soviet/templates/bssr.html'"></div>
 
-		<div ng-show="selectedYear.number === 1920" ng-include="'app/soviet/templates/nezal.html'"></div>
+		<div ng-if="selectedYear.number === 1920" ng-include="'app/soviet/templates/nezal.html'"></div>
 
-		<div ng-show="selectedYear.number === 1921" ng-include="'app/soviet/templates/reforma.html'"></div>
+		<div ng-if="selectedYear.number === 1921" ng-include="'app/soviet/templates/reforma.html'"></div>
 
-		<div ng-show="selectedYear.number === 1922" ng-include="'app/soviet/templates/bnr.html'"></div>
+		<div ng-if="selectedYear.number === 1922" ng-include="'app/soviet/templates/bnr.html'"></div>
 
-		<div ng-show="selectedYear.number === 1924" ng-include="'app/soviet/templates/gallery.html'"></div>
+		<div ng-if="selectedYear.number === 1924" ng-include="'app/soviet/templates/gallery.html'"></div>
 
-		<div ng-show="selectedYear.number === 1925" ng-include="'app/soviet/templates/repressions.html'"></div>
+		<div ng-if="selectedYear.number === 1925" ng-include="'app/soviet/templates/repressions.html'"></div>
 
 	</ion-content>
 </ion-view>

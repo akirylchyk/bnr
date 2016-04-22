@@ -50,6 +50,10 @@
 	font-family: "Book Antiqua", seif;
 }
 
+.germanica-font {
+	font-family: "ShadowedGermanica", seif;
+}
+
 /* cyrillic */
 @font-face {
 	font-family: 'Neucha';
@@ -83,7 +87,13 @@
 /* latin */
 @font-face {
 	font-family: 'PlainGermanica';
-	src: url("fonts/germanica.ttf");
+	src: url("fonts/PlainGermanica.ttf");
+}
+
+/* latin */
+@font-face {
+	font-family: 'ShadowedGermanica';
+	src: url("fonts/ShadowedGermanica.ttf");
 }
 
 /* cyrillic */

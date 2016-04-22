@@ -13,31 +13,31 @@
 
 		$scope.items = [
 			{
-				src: '../css/img/1.jpg',
+				src: 'css/img/1.jpg',
 				sub: ''
 			},
 			{
-				src: '../css/img/2.jpg',
+				src: 'css/img/2.jpg',
 				sub: ''
 			},
 			{
-				src: '../css/img/3.jpeg',
+				src: 'css/img/3.jpeg',
 				sub: ''
 			},
 			{
-				src: '../css/img/4.jpg',
+				src: 'css/img/4.jpg',
 				sub: ''
 			},
 			{
-				src: '../css/img/5.jpg',
+				src: 'css/img/5.jpg',
 				sub: ''
 			},
 			{
-				src: '../css/img/6.jpg',
+				src: 'css/img/6.jpg',
 				sub: ''
 			},
 			{
-				src: '../css/img/7.jpg',
+				src: 'css/img/7.jpg',
 				sub: ''
 			}
 		];

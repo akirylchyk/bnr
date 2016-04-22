@@ -21,6 +21,7 @@
 .repression-title span {
 	margin: auto;
 	display: inline-block;
+	text-align: center;
 }
 
 .repression-footer {
@@ -64,6 +65,7 @@
 	font-size: 6em;
 	left: 28%;
 	transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
 	bottom: 110px;
 }
 
@@ -77,9 +79,14 @@
 
 .bssr-text {
 	white-space: pre;
+	line-height: 30px;
 	margin: 0;
 	font-size: 2em;
-	padding: 5px;
+	padding: 0;
+}
+
+.bssr-text.taras-text {
+	font-size: 21px;
 }
 
 .sun-postcard {
@@ -135,12 +142,19 @@
 	padding: 0 25px;
 }
 
+.u-wrapper {
+	position: absolute;
+	bottom: 15%;
+	left: 3%;
+}
+
 .quote-text-repression {
-	font-size: 14px;
+	font-size: 1.5em;
 	text-align: justify;
 	padding: 0 20px;
 	position: absolute;
-	bottom: 100px;
+	bottom: 21%;
+	line-height: 1em;
 }
 
 .lacinka {
@@ -187,8 +201,6 @@
 	width: 181px;
 }
 
-.center-swipe {
-	margin: 5% auto;
-	left: 0;
-	right: 0;
+.center-swipe .swipe-cards {
+	margin-left: 55px !important;
 }

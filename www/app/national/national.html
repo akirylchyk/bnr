@@ -1,32 +1,30 @@
-<ion-view title="Нацыяналістычная хроніка">
+<ion-view title="Нацыянальная хроніка">
 	<ion-content overflow-scroll="true" padding="false" class="national-back has-header">
 
 		<div class="list card chronicle-slide">
 			<morph-carousel data-items="years" on-selected="selectedYear" show-value="number"></morph-carousel>
 		</div>
 
-		<div ng-show="selectedYear.number === 1904" ng-include="'app/national/templates/alpha.html'"></div>
+		<div ng-if="selectedYear.number === 1905" ng-include="'app/national/templates/idea.html'"></div>
 
-		<div ng-show="selectedYear.number === 1905" ng-include="'app/national/templates/idea.html'"></div>
+		<div ng-if="selectedYear.number === 1910" ng-include="'app/national/templates/u.html'"></div>
 
-		<div ng-show="selectedYear.number === 1910" ng-include="'app/national/templates/u.html'"></div>
+		<div ng-if="selectedYear.number === 1913" ng-include="'app/national/templates/lacinka.html'"></div>
 
-		<div ng-show="selectedYear.number === 1914" ng-include="'app/national/templates/lacinka.html'"></div>
+		<div ng-if="selectedYear.number === 1914" ng-include="'app/national/templates/tarashkevich.html'"></div>
 
-		<div ng-show="selectedYear.number === 1915" ng-include="'app/national/templates/tarashkevich.html'"></div>
+		<div ng-if="selectedYear.number === 1916" ng-include="'app/national/templates/tarashkevich-element.html'"></div>
 
-		<div ng-show="selectedYear.number === 1916" ng-include="'app/national/templates/tarashkevich-element.html'"></div>
+		<div ng-if="selectedYear.number === 1917" ng-include="'app/national/templates/udzelniki.html'"></div>
 
-		<div ng-show="selectedYear.number === 1917" ng-include="'app/national/templates/udzelniki.html'"></div>
+		<div ng-if="selectedYear.number === 1918" ng-include="'app/national/templates/sun.html'"></div>
 
-		<div ng-show="selectedYear.number === 1918" ng-include="'app/national/templates/sun.html'"></div>
+		<div ng-if="selectedYear.number === 1919" ng-include="'app/national/templates/circle.html'"></div>
 
-		<div ng-show="selectedYear.number === 1919" ng-include="'app/national/templates/circle.html'"></div>
+		<div ng-if="selectedYear.number === 1921" ng-include="'app/national/templates/map.html'"></div>
 
-		<div ng-show="selectedYear.number === 1921" ng-include="'app/national/templates/map.html'"></div>
-
-		<div ng-show="selectedYear.number === 1920">
-			<swipe-cards class="center-swipe">
+		<div ng-if="selectedYear.number === 1920" class="center-swipe">
+			<swipe-cards>
 				<swipe-card ng-repeat="card in cards"
 				            on-destroy="cardDestroyed($index)"
 				            on-card-swipe="cardSwiped($index)">
@@ -46,7 +44,7 @@
 				</swipe-card>
 			</swipe-cards>
 			<div class="quote-wrapper">
-				<p class="quote-text-repression">
+				<p class="quote-text-repression helvetica-font">
 					Акрамя асуджаных у 1920—1930-я, рэпрэсавана і выслана за межы БССР больш за 250 тыс.
 					Усяго з 1954 да пачатку 2000 року ў Беларусі рэабілітавана больш за 200 тыс. ахвяраў палітычных
 					рэпрэсіяў
@@ -55,7 +53,7 @@
 			</div>
 		</div>
 
-		<div ng-show="selectedYear.number === 1922" ng-include="'app/national/templates/bssr.html'"></div>
+		<div ng-if="selectedYear.number === 1922" ng-include="'app/national/templates/bssr.html'"></div>
 
 	</ion-content>
 </ion-view>

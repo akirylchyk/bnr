@@ -7,19 +7,14 @@
 
 		var service = {},
 
-
 			cardTypes = [{
-				title: 'Удзельнiкi',
+				title: 'Аляксандр Цвікевіч',
 				state: 'tabs.chronicleNational',
-				image: 'css/img/6.jpg'
+				image: 'css/img/10.jpg'
 			}, {
 				title: 'Максiм Гарэцкi',
 				state: 'tabs.chronicleSoviet',
 				image: 'css/img/8.jpg'
-			}, {
-				title: 'Сучаснiкi',
-				state: 'tabs.chronicleModern',
-				image: 'css/img/9.jpg'
 			}],
 
 			timeline = [

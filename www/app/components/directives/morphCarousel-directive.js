@@ -50,6 +50,7 @@ angular.module('morphCarousel', [])
 					for (var i = 0, len = scope.items.length; i < len; i++) {
 						if (angular.equals(scope.selectedItem, scope.items[i])) {
 							var angle = 360 - i * minRotateAngle;
+							carouselRotateAngle = angle;
 							scope.carouselRotation = 'rotateY(' + angle + 'deg)';
 							break;
 						}

@@ -2,10 +2,11 @@
 	<ion-content overflow-scroll="true" padding="true" class="modern-back has-header">
 
 		<div class="list card chronicle-slide">
-			<morph-carousel class="modern-carousel" data-items="years" on-selected="selectedYear" show-value="number"></morph-carousel>
+			<morph-carousel class="modern-carousel"
+			                data-items="years"
+			                on-selected="selectedYear"
+			                show-value="number"></morph-carousel>
 		</div>
-
-
 
 		<div ng-if="selectedYear.number === 1918" ng-include="'app/modern/templates/mova.html'"></div>
 
@@ -13,12 +14,37 @@
 
 		<div ng-if="selectedYear.number === 1920" ng-include="'app/modern/templates/points.html'"></div>
 
-		<div ng-if="selectedYear.number === 1921" ng-include="'app/modern/templates/cards.html'" class="big-polaroids"></div>
+		<div ng-if="selectedYear.number === 1921"
+		     ng-include="'app/modern/templates/cards.html'"
+		     class="big-polaroids"></div>
 
 		<div ng-if="selectedYear.number === 1922" ng-include="'app/modern/templates/sluck.html'"></div>
 
 		<div ng-if="selectedYear.number === 1923" ng-include="'app/modern/templates/gallery.html'"></div>
 
-
 	</ion-content>
+
+	<ion-pull-up-footer class="bar-dark"
+	                    on-expand="footerExpand()"
+	                    on-collapse="footerCollapse()"
+	                    initial-state="minimized"
+	                    default-behavior="expand">
+		<ion-pull-up-handle width="100"
+		                    height="25"
+		                    toggle="ion-chevron-up ion-chevron-down"
+		                    class="ion-pull-up-handle">
+			<i class="icon ion-chevron-up"></i>
+		</ion-pull-up-handle>
+
+		<ion-pull-up-content class="modern-back" scroll="false">
+			<div class="row">
+
+			</div>
+			<div class="row">
+
+			</div>
+		</ion-pull-up-content>
+
+	</ion-pull-up-footer>
+
 </ion-view>

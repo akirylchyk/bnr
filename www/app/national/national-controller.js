@@ -17,6 +17,18 @@
 
 		var repressionItems = national.getRepressionItems();
 
+		$scope.years = years.getYears();
+
+		$scope.selectedYear = $scope.years[18];
+
+		$scope.selectedPull = $scope.selectedYear.number;
+
+		$scope.$on('morphSelected', function (a, b) {
+			if (b) {
+				$scope.selectedPull = b.number;
+			}
+		});
+
 		$scope.popover = $ionicPopover.fromTemplate('my-popover.html', {
 			scope: $scope
 		});
@@ -49,10 +61,6 @@
 		});
 
 
-		
-
-
-
 		var cardTypes = chronicle.getCards();
 
 		$scope.cards = [];
@@ -81,24 +89,12 @@
 		};
 
 
-
-
-
-
-
-
-
-
-
 		$scope.goToDetails = function (id) {
 			$state.go('tabs.chronicleDetails', {id: id});
 		};
 
 		$scope.timeline = chronicle.getTimeline();
 
-		$scope.years = years.getYears();
-
-		$scope.selectedYear = $scope.years[18];
 
 	};
 

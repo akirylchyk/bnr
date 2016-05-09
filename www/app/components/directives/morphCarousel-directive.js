@@ -119,9 +119,9 @@ angular.module('morphCarousel', [])
 						currentAngle = carouselRotateAngle + angle;
 						setRotation(currentAngle);
 
-						if (Math.abs(angle) < endAngle) {
-							(window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
-						} else {
+						// if (Math.abs(angle) < endAngle) {
+						// 	(window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+						// } else {
 							var itemIndex;
 							currentAngle = stabilizeAngle(currentAngle);
 							setRotation(currentAngle);
@@ -136,7 +136,8 @@ angular.module('morphCarousel', [])
 							} else {
 								scope.selectedItem = scope.items[itemIndex];
 							}
-						}
+							scope.$emit('morphSelected', scope.selectedItem);
+						//}
 					}.bind(this);
 					tick()
 				}

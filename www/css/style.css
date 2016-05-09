@@ -34,16 +34,28 @@
 	bottom: 0;
 }
 
-.national-back {
+.national-back, .national-pull {
 	background: linear-gradient(141deg, #E7DACD 0%, #DBCEC1 51%, #D0C3B6 75%);
 }
 
-.modern-back {
+.national-pull {
+	color: #000;
+}
+
+.modern-back, .modern-pull {
 	background: linear-gradient(141deg, #57604C 0%, #515A47 51%, #49523F 75%);
 }
 
-.soviet-back {
+.modern-pull {
+	color: white;
+}
+
+.soviet-back, .soviet-pull {
 	background: linear-gradient(141deg, #a32928 0%, #972827 51%, #902827 75%);
+	color: #fff;
+}
+
+.soviet-pull {
 	color: #fff;
 }
 
@@ -93,4 +105,18 @@
 
 .text-white {
 	color: #fff;
+}
+
+.pull-comment {
+	width: 50%;
+}
+
+.pull-title{
+	padding: 20px 10px;
+}
+
+.pull-review {
+	text-align: justify;
+	font-size: 20px;
+	padding: 20px 10px;
 }

@@ -3,13 +3,17 @@
 }
 
 .repression-element {
-	font-size: 20px;
+	font-size: 35px;
 }
 
 .repression-content {
 	height: 100%;
 	border-radius: 0 !important;
 	text-align: center;
+}
+
+.repression-content .scroll {
+	background: #444444;
 }
 
 .repression-title {
@@ -43,7 +47,7 @@
 
 .triangle {
 	width: 100%;
-	border-bottom: 5em solid black;
+	border-bottom: 8em solid black;
 	border-right: 56em solid transparent;
 	position: absolute;
 	bottom: 47px;
@@ -56,7 +60,7 @@
 	border-radius: 100%;
 	position: absolute;
 	right: 53%;
-	bottom: 11%;
+	bottom: 16%;
 }
 
 .bnr-text {
@@ -65,8 +69,8 @@
 	font-size: 6em;
 	left: 28%;
 	transform: rotate(5deg);
-	-webkit-transform: rotate(5deg);
-	bottom: 110px;
+	-webkit-transform: rotate(8deg);
+	bottom: 135px;
 }
 
 .idea-orn {

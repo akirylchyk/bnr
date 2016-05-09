@@ -46,7 +46,7 @@
 	background: linear-gradient(141deg, #57604C 0%, #515A47 51%, #49523F 75%);
 }
 
-.modern-pull {
+.modern-pull, .modern-pull .pull-title {
 	color: white;
 }
 
@@ -55,7 +55,7 @@
 	color: #fff;
 }
 
-.soviet-pull {
+.soviet-pull, .soviet-pull .pull-title {
 	color: #fff;
 }
 
@@ -111,7 +111,7 @@
 	width: 50%;
 }
 
-.pull-title{
+.pull-title {
 	padding: 20px 10px;
 }
 

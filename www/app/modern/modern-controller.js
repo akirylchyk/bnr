@@ -76,6 +76,14 @@
 		$scope.years = years.getYears();
 
 		$scope.selectedYear = $scope.years[18];
+		
+		$scope.selectedPull = $scope.selectedYear.number;
+
+		$scope.$on('morphSelected', function (a, b) {
+			if (b) {
+				$scope.selectedPull = b.number;
+			}
+		});
 
 		$scope.words = modern.getWords();
 

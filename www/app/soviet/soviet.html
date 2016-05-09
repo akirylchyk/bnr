@@ -16,11 +16,11 @@
 
 		<div ng-if="selectedYear.number === 1921" ng-include="'app/soviet/templates/reforma.html'"></div>
 
-		<div ng-if="selectedYear.number === 1922" ng-include="'app/soviet/templates/bnr.html'"></div>
-
 		<div ng-if="selectedYear.number === 1923" ng-include="'app/soviet/templates/gallery.html'"></div>
 
-		<div ng-if="selectedYear.number === 1924" ng-include="'app/soviet/templates/repressions.html'"></div>
+		<div ng-if="selectedYear.number === 1925" ng-include="'app/soviet/templates/bnr.html'"></div>
+
+		<div ng-if="selectedYear.number === 1926" ng-include="'app/soviet/templates/repressions.html'"></div>
 
 	</ion-content>
 </ion-view>
@@ -38,12 +38,18 @@
 	</ion-pull-up-handle>
 
 	<ion-pull-up-content class="soviet-pull" scroll="false">
-		<div class="row">
+		<div ng-if="selectedPull === 1918" ng-include="'app/soviet/templates/kaizer-pull.html'"></div>
 
-		</div>
-		<div class="row">
+		<div ng-if="selectedPull === 1919" ng-include="'app/soviet/templates/bssr-pull.html'"></div>
 
-		</div>
+		<div ng-if="selectedPull === 1920" ng-include="'app/soviet/templates/nezal-pull.html'"></div>
+
+		<div ng-if="selectedPull === 1920" ng-include="'app/soviet/templates/nezal-pull.html'"></div>
+
+		<div ng-if="selectedPull === 1921" ng-include="'app/soviet/templates/reforma-pull.html'"></div>
+
+		<div ng-if="selectedPull === 1925" ng-include="'app/soviet/templates/bnr-pull.html'"></div>
+
 	</ion-pull-up-content>
 
 </ion-pull-up-footer>

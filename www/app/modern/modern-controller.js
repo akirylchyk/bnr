@@ -43,8 +43,6 @@
 		];
 
 
-
-
 		var cardTypes = modern.getCards();
 
 		$scope.cards = [];
@@ -71,11 +69,6 @@
 			var card = $ionicSwipeCardDelegate.getSwipeableCard($scope);
 			card.swipe();
 		};
-
-
-
-
-
 
 
 		$scope.translated = false;

@@ -22,13 +22,13 @@
 		$scope.openModal = function () {
 			$scope.modal.show();
 		};
-		
+
 		$scope.closeModal = function (name, password) {
 			settings.setCreds(name, password);
 			$scope.user = name;
 			$scope.modal.hide();
 		};
-		
+
 		$scope.$on('$destroy', function () {
 			$scope.modal.remove();
 		});

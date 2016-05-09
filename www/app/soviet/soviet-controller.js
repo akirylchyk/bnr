@@ -52,7 +52,7 @@
 		$scope.years = years.getYears();
 
 		$scope.selectedYear = $scope.years[18];
-		
+
 		$scope.items = [
 			{
 				src: 'css/img/1.jpg',
@@ -87,7 +87,7 @@
 		$scope.prev = function () {
 			$scope.year--;
 		};
-		
+
 		$scope.next = function () {
 			$scope.year++;
 		};

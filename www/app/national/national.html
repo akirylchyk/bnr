@@ -21,13 +21,13 @@
 
 		<div ng-if="selectedYear.number === 1919" ng-include="'app/national/templates/circle.html'"></div>
 
-		<div ng-if="selectedYear.number === 1920"
-		     ng-include="'app/national/templates/repressions.html'"
-		     class="center-swipe"></div>
+		<div ng-if="selectedYear.number === 1920" ng-include="'app/national/templates/sluck.html'"></div>
 
 		<div ng-if="selectedYear.number === 1921" ng-include="'app/national/templates/map.html'"></div>
 
 		<div ng-if="selectedYear.number === 1922" ng-include="'app/national/templates/bssr.html'"></div>
+
+		<div ng-if="selectedYear.number === 1925" ng-include="'app/national/templates/repressions.html'" class="center-swipe"></div>
 
 	</ion-content>
 	<ion-pull-up-footer class="bar-dark"
@@ -52,8 +52,7 @@
 
 			<div ng-if="selectedPull === 1915" ng-include="'app/national/templates/idea-pull.html'"></div>
 
-			<div ng-if="selectedPull === 1916"
-			     ng-include="'app/national/templates/tarashkevich-element-pull.html'"></div>
+			<div ng-if="selectedPull === 1916" ng-include="'app/national/templates/tarashkevich-element-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1917" ng-include="'app/national/templates/udzelniki-pull.html'"></div>
 
@@ -61,11 +60,13 @@
 
 			<div ng-if="selectedPull === 1919" ng-include="'app/national/templates/circle-pull.html'"></div>
 
-			<div ng-if="selectedPull === 1920" ng-include="'app/national/templates/repressions-pull.html'"></div>
+			<div ng-if="selectedPull === 1920" ng-include="'app/national/templates/sluck-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1921" ng-include="'app/national/templates/map-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1922" ng-include="'app/national/templates/bssr-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1925" ng-include="'app/national/templates/repressions-pull.html'"></div>
 
 		</ion-pull-up-content>
 

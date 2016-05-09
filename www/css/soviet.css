@@ -108,3 +108,16 @@
 .line-through {
 	text-decoration: line-through;
 }
+
+.soviet-sluck {
+	background: url("img/repression/sluck3.jpg") no-repeat;
+	width: 295px;
+	height: 222px;
+	margin: auto;
+}
+
+.soviet-sluck-title {
+	margin: 85px 0;
+	text-align: center;
+	font-size: 30px;
+}

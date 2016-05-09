@@ -212,3 +212,16 @@
 .center-swipe .swipe-cards {
 	margin-left: 55px !important;
 }
+
+.national-sluck {
+	background: url("img/national/sluck.jpg") no-repeat;
+	width: 622px;
+	height: 466px;
+	margin: auto;
+}
+
+.national-sluck-title {
+	margin: 85px 0;
+	text-align: center;
+	font-size: 50px;
+}

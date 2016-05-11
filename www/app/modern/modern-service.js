@@ -62,7 +62,16 @@
 				title: 'Палута Бадунова',
 				state: 'tabs.chronicleSoviet',
 				image: 'css/img/modern/polaroids/4.jpg'
-			}];
+			}],
+			index = 18;
+
+		service.setIndex = function(val){
+			index = val;
+		};
+
+		service.getIndex = function(){
+			return index;
+		};
 
 		service.getTimelineItems = function () {
 			return timelineItems;

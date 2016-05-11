@@ -11,8 +11,16 @@
 				{name: 'Браніслаў Тарашкевіч', photo: 'css/img/repression/bt.jpg', info: 'Растраляны ў 1948 годзе'},
 				{name: 'Вацлаў Ластоўскі', photo: 'css/img/repression/vl.jpg', info: 'Растраляны ў 1942 годзе'},
 				{name: 'Максім Гарэцкі', photo: 'css/img/repression/mg.jpg', info: 'Растраляны ў 1933 годзе'}
-			];
+			],
+			index = 18;
 
+		service.setIndex = function (val) {
+			index = val;
+		};
+
+		service.getIndex = function () {
+			return index;
+		};
 		service.getRepressionItems = function () {
 			return repressionItems;
 		};

@@ -8,18 +8,46 @@
 		'$ionicPopover',
 		'national',
 		'$ionicSwipeCardDelegate',
-		'years'
+		'years',
+		'$ionicActionSheet',
+		'soviet',
+		'modern'
 	];
 
-	var controller = function ($scope, chronicle, $state, $ionicPopover, national, $ionicSwipeCardDelegate, years) {
+	var controller = function ($scope, chronicle, $state, $ionicPopover, national, $ionicSwipeCardDelegate, years, $ionicActionSheet, soviet, modern) {
 
 		window.scope = $scope;
+
+		$scope.showActionSheet = function () {
+
+			$ionicActionSheet.show({
+				titleText: 'Выбраць Хроніку',
+				buttons: [
+					{text: 'Савецкая'},
+					{text: 'Сучасная'}
+				],
+				buttonClicked: function (index) {
+					if (index === 0) {
+						$state.go('tabs.chronicleSoviet');
+						soviet.setIndex(20);
+					}
+
+					if (index === 1) {
+						$state.go('tabs.chronicleModern');
+						modern.setIndex(20);
+					}
+					console.log(index);
+					return true;
+				}
+			});
+		};
+
 
 		var repressionItems = national.getRepressionItems();
 
 		$scope.years = years.getYears();
 
-		$scope.selectedYear = $scope.years[18];
+		$scope.selectedYear = $scope.years[national.getIndex()];
 
 		$scope.selectedPull = $scope.selectedYear.number;
 

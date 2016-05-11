@@ -11,7 +11,16 @@
 				{title: 'Расстрелять', src: 'css/img/polaroids/2.jpg'},
 				{title: 'Расстрелять', src: 'css/img/polaroids/3.jpg'},
 				{title: 'Расстрелять', src: 'css/img/polaroids/4.jpg'}
-			];
+			], 
+			index = 18;
+		
+		service.setIndex = function(val){
+			index = val; 
+		};
+
+		service.getIndex = function(){
+			return index;
+		};
 
 		service.getPolaroids = function () {
 			return polaroids;

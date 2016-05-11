@@ -6,12 +6,39 @@
 		'soviet',
 		'$ionicPopover',
 		'national',
-		'years'
+		'years',
+		'$ionicActionSheet',
+		'$state',
+		'modern'
 	];
 
-	var controller = function ($scope, soviet, $ionicPopover, national, years) {
+	var controller = function ($scope, soviet, $ionicPopover, national, years, $ionicActionSheet, $state, modern) {
 
 		window.scope = $scope;
+
+		$scope.showActionSheet = function () {
+
+			$ionicActionSheet.show({
+				titleText: 'Выбраць Хроніку',
+				buttons: [
+					{text: 'Нацыянальная'},
+					{text: 'Сучасная'}
+				],
+				buttonClicked: function (index) {
+					if (index === 0) {
+						$state.go('tabs.chronicleNational');
+						national.setIndex(20);
+					}
+
+					if (index === 1) {
+						$state.go('tabs.chronicleModern')
+						modern.setIndex(20);
+					}
+					console.log(index);
+					return true;
+				}
+			});
+		};
 
 
 		var repressionItems = national.getRepressionItems();
@@ -51,16 +78,15 @@
 
 		$scope.years = years.getYears();
 
-		$scope.selectedYear = $scope.years[18];
+		$scope.selectedYear = $scope.years[soviet.getIndex()];
 
 		$scope.selectedPull = $scope.selectedYear.number;
 
-		$scope.$on('morphSelected', function (a, b) {
-			if (b) {
-				$scope.selectedPull = b.number;
-			}
+		$scope.$on('anotherChronicle', function (a, b) {
+			console.log(a);
+			console.log(b);
 		});
-		
+
 		$scope.items = [
 			{
 				src: 'css/img/1.jpg',
@@ -95,7 +121,7 @@
 		$scope.prev = function () {
 			$scope.year--;
 		};
-		
+
 		$scope.next = function () {
 			$scope.year++;
 		};

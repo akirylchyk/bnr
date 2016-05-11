@@ -4,10 +4,14 @@
 	var injections = [
 		'$scope',
 		'modern',
-		'years'
+		'years',
+		'$state',
+		'$ionicActionSheet',
+		'national',
+		'soviet'
 	];
 
-	var controller = function ($scope, modern, years) {
+	var controller = function ($scope, modern, years, $state, $ionicActionSheet, national, soviet) {
 
 		window.scope = $scope;
 
@@ -43,6 +47,31 @@
 		];
 
 
+		$scope.showActionSheet = function () {
+
+			$ionicActionSheet.show({
+				titleText: 'Выбраць Хроніку',
+				buttons: [
+					{text: 'Нацыянальная'},
+					{text: 'Савецкая'}
+				],
+				buttonClicked: function (index) {
+					if (index === 0) {
+						$state.go('tabs.chronicleNational');
+						national.setIndex(20);
+					}
+
+					if (index === 1) {
+						$state.go('tabs.chronicleSoviet');
+						soviet.setIndex(20);
+					}
+					console.log(index);
+					return true;
+				}
+			});
+		};
+
+
 		var cardTypes = modern.getCards();
 
 		$scope.cards = [];
@@ -75,7 +104,7 @@
 
 		$scope.years = years.getYears();
 
-		$scope.selectedYear = $scope.years[18];
+		$scope.selectedYear = $scope.years[modern.getIndex()];
 		
 		$scope.selectedPull = $scope.selectedYear.number;
 

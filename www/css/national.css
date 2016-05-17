@@ -59,18 +59,18 @@
 	background: black;
 	border-radius: 100%;
 	position: absolute;
-	right: 53%;
-	bottom: 16%;
+	right: 25%;
+	bottom: 13%;
 }
 
 .bnr-text {
 	color: #B72624;
 	position: absolute;
 	font-size: 6em;
-	left: 28%;
+	left: 50%;
 	transform: rotate(5deg);
 	-webkit-transform: rotate(8deg);
-	bottom: 135px;
+	bottom: 111px;
 }
 
 .idea-orn {

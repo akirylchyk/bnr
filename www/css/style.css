@@ -132,3 +132,16 @@
 	top: 17%;
 	right: 11%;
 }
+
+.img-push {
+	margin-top: 12%;
+}
+
+.img-push.push-lg {
+	margin-top: 24%
+}
+
+.img-title {
+	font-size: 30px;
+	margin-bottom: 30px;
+}

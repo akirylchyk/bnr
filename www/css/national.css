@@ -100,6 +100,7 @@
 .sun-postcard img {
 	height: auto;
 	max-height: calc(100vh - 400px);
+	max-width: 100%;
 }
 
 .map-title {

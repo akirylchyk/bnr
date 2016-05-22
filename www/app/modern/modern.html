@@ -8,19 +8,27 @@
 			                show-value="number"></morph-carousel>
 		</div>
 
-		<div ng-if="selectedYear.number === 1918" ng-include="'app/modern/templates/mova.html'"></div>
+		<div ng-if="selectedYear.number === 1916" ng-include="'app/modern/templates/points.html'"></div>
 
-		<div ng-if="selectedYear.number === 1919" ng-include="'app/modern/templates/last.html'"></div>
+		<div ng-if="selectedYear.number === 1917" ng-include="'app/modern/templates/mova.html'"></div>
 
-		<div ng-if="selectedYear.number === 1922" ng-include="'app/modern/templates/points.html'"></div>
+		<div ng-if="selectedYear.number === 1918" ng-include="'app/modern/templates/cheb.html'"></div>
+
+		<div ng-if="selectedYear.number === 1919" ng-include="'app/modern/templates/move.html'"></div>
+
+		<div ng-if="selectedYear.number === 1920" ng-include="'app/modern/templates/sluck.html'"></div>
 
 		<div ng-if="selectedYear.number === 1921"
 		     ng-include="'app/modern/templates/cards.html'"
 		     class="big-polaroids"></div>
 
-		<div ng-if="selectedYear.number === 1920" ng-include="'app/modern/templates/sluck.html'"></div>
+		<div ng-if="selectedYear.number === 1922" ng-include="'app/modern/templates/kvitki.html'"></div>
 
-		<div ng-if="selectedYear.number === 1923" ng-include="'app/modern/templates/gallery.html'"></div>
+		<div ng-if="selectedYear.number === 1923" ng-include="'app/modern/templates/pass.html'"></div>
+
+		<div ng-if="selectedYear.number === 1924" ng-include="'app/modern/templates/last.html'"></div>
+
+		<div ng-if="selectedYear.number === 1925" ng-include="'app/modern/templates/dzen.html'"></div>
 
 	</ion-content>
 
@@ -38,9 +46,23 @@
 
 		<ion-pull-up-content class="modern-pull" scroll="false">
 
-			<div ng-if="selectedPull === 1918" ng-include="'app/modern/templates/mova-pull.html'"></div>
+			<div ng-if="selectedPull === 1916" ng-include="'app/modern/templates/points-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1917" ng-include="'app/modern/templates/mova-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1918" ng-include="'app/modern/templates/cheb-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1919" ng-include="'app/modern/templates/move-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1920" ng-include="'app/modern/templates/sluck-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1922" ng-include="'app/modern/templates/kvitki-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1923" ng-include="'app/modern/templates/pass-pull.html'"></div>
+
+			<div ng-if="selectedYear.number === 1924" ng-include="'app/modern/templates/last-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1925" ng-include="'app/modern/templates/dzen-pull.html'"></div>
 
 		</ion-pull-up-content>
 

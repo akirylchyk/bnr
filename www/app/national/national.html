@@ -31,6 +31,8 @@
 
 		<div ng-if="selectedYear.number === 1922" ng-include="'app/national/templates/bssr.html'"></div>
 
+		<div ng-if="selectedYear.number === 1924" ng-include="'app/national/templates/polska.html'"></div>
+
 		<div ng-if="selectedYear.number === 1925" ng-include="'app/national/templates/repressions.html'" class="center-swipe"></div>
 
 	</ion-content>
@@ -73,6 +75,10 @@
 			<div ng-if="selectedPull === 1921" ng-include="'app/national/templates/map-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1922" ng-include="'app/national/templates/bssr-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1923" ng-include="'app/national/templates/novy-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1924" ng-include="'app/national/templates/polska-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1925" ng-include="'app/national/templates/repressions-pull.html'"></div>
 

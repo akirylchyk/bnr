@@ -123,7 +123,15 @@
 
 		$scope.timeline = chronicle.getTimeline();
 
+		$scope.comments = [];
 
+		$scope.new = {comment: ''};
+
+		$scope.addComment = function () {
+			$scope.comments.push({author: 'Я', text: $scope.new.comment, date: new Date()});
+			$scope.new.comment = '';
+		}
+		
 	};
 
 	controller.$inject = injections;

@@ -11,3 +11,25 @@
 		узыходзіла сонца. Хтосьці выгукнуў: “Узыходзіць сонца незалежнай Беларусі!”.
 	</p>
 </div>
+
+<div class="row pull-comments"></div>
+
+<div class="chat helvetica-font">
+	<div class="bubble you">
+		Гэта цудоўная паштоўка. БНР стала фундаментам для развіцця беларускай дзяржаўнасці. На жаль, зараз нават Пагоня пад забаронай.
+		<span class="pull-comments-author">Ягор</span>
+		<span class="pull-comments-date">2016-05-29 20:17</span>
+	</div>
+	<div class="row" ng-repeat="comment in comments">
+		<div class="bubble me">
+			{{comment.text}}
+			<span class="pull-comments-author">{{comment.author}}</span>
+			<span class="pull-comments-date">{{comment.date | date: 'yyyy-MM-dd HH:mm'}}</span>
+		</div>
+	</div>
+</div>
+<div class="row pull-comments-wrapper">
+	<textarea ng-model="new.comment" placeholder="Пакіньце свой каментар.." class="pull-comments-textarea"></textarea>
+	<button ng-click="addComment()" class="button button-positive icon ion-paper-airplane"></button>
+</div>
+

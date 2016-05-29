@@ -121,10 +121,15 @@
 	padding: 20px 10px;
 }
 
+.pull-review span {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
 .another-chronicle {
 	position: absolute;
 	bottom: 15%;
-	left: 42%;
+	left: 47%;
 }
 
 .another-chronicle-modern {
@@ -134,7 +139,7 @@
 }
 
 .img-push {
-	margin-top: 12%;
+	margin-top: 6%;
 }
 
 .img-push.push-lg {
@@ -142,6 +147,6 @@
 }
 
 .img-title {
-	font-size: 30px;
+	font-size: 20px;
 	margin-bottom: 30px;
 }

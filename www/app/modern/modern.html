@@ -8,6 +8,8 @@
 			                show-value="number"></morph-carousel>
 		</div>
 
+		<div ng-if="selectedYear.number === 1915" ng-include="'app/modern/templates/pixelate.html'"></div>
+
 		<div ng-if="selectedYear.number === 1916" ng-include="'app/modern/templates/points.html'"></div>
 
 		<div ng-if="selectedYear.number === 1917" ng-include="'app/modern/templates/mova.html'"></div>
@@ -18,9 +20,7 @@
 
 		<div ng-if="selectedYear.number === 1920" ng-include="'app/modern/templates/sluck.html'"></div>
 
-		<div ng-if="selectedYear.number === 1921"
-		     ng-include="'app/modern/templates/cards.html'"
-		     class="big-polaroids"></div>
+		<div ng-if="selectedYear.number === 1921" ng-include="'app/modern/templates/cards.html'" class="big-polaroids"></div>
 
 		<div ng-if="selectedYear.number === 1922" ng-include="'app/modern/templates/kvitki.html'"></div>
 
@@ -46,6 +46,8 @@
 
 		<ion-pull-up-content class="modern-pull" scroll="false">
 
+			<div ng-if="selectedPull === 1915" ng-include="'app/modern/templates/pixelate-pull.html'"></div>
+
 			<div ng-if="selectedPull === 1916" ng-include="'app/modern/templates/points-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1917" ng-include="'app/modern/templates/mova-pull.html'"></div>
@@ -56,11 +58,13 @@
 
 			<div ng-if="selectedPull === 1920" ng-include="'app/modern/templates/sluck-pull.html'"></div>
 
+			<div ng-if="selectedPull === 1921" ng-include="'app/modern/templates/cards-pull.html'"></div>
+
 			<div ng-if="selectedPull === 1922" ng-include="'app/modern/templates/kvitki-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1923" ng-include="'app/modern/templates/pass-pull.html'"></div>
 
-			<div ng-if="selectedYear.number === 1924" ng-include="'app/modern/templates/last-pull.html'"></div>
+			<div ng-if="selectedPull === 1924" ng-include="'app/modern/templates/last-pull.html'"></div>
 
 			<div ng-if="selectedPull === 1925" ng-include="'app/modern/templates/dzen-pull.html'"></div>
 

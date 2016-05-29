@@ -14,7 +14,11 @@
 			}, {
 				title: 'Максiм Гарэцкi',
 				state: 'tabs.chronicleSoviet',
-				image: 'css/img/8.jpg'
+				image: 'css/img/11.jpg'
+			}, {
+				title: 'Аляксандр Ульянаў',
+				state: 'tabs.chronicleSoviet',
+				image: 'css/img/12.jpg'
 			}],
 
 			timeline = [

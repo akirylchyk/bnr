@@ -89,7 +89,7 @@
 }
 
 .quote-title {
-	font-size: 2em;
+	font-size: 20px;
 }
 
 .quote-author {
@@ -113,6 +113,10 @@
 
 .pull-title {
 	padding: 20px 10px;
+}
+
+.pull-title.modern {
+	font-size: 22px;
 }
 
 .pull-review {

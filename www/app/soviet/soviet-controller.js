@@ -82,9 +82,10 @@
 
 		$scope.selectedPull = $scope.selectedYear.number;
 
-		$scope.$on('anotherChronicle', function (a, b) {
-			console.log(a);
-			console.log(b);
+		$scope.$on('morphSelected', function (a, b) {
+			if (b) {
+				$scope.selectedPull = b.number;
+			}
 		});
 
 		$scope.items = [
@@ -114,6 +115,14 @@
 			},
 			{
 				src: 'css/img/7.jpg',
+				sub: ''
+			},
+			{
+				src: 'css/img/8.jpg',
+				sub: ''
+			},
+			{
+				src: 'css/img/9.jpg',
 				sub: ''
 			}
 		];

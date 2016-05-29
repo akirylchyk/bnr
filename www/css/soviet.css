@@ -41,12 +41,12 @@
 
 .bnr-black-line {
 	background-color: black;
-	width: 105%;
+	width: 52%;
 	transform: rotate(-40deg);
 	-webkit-transform: rotate(-40deg);
 	position: absolute;
 	bottom: 10%;
-	right: -36%;
+	right: -10%;
 	text-align: center;
 }
 

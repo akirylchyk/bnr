@@ -1,5 +1,9 @@
 .repression-row {
-	margin: 50px 0 20px 5px;
+	margin: 50px 0 20px 20px;
+}
+
+.repression-row.soviet {
+	margin: 50px 0 20px 0;
 }
 
 .repression-element {
@@ -75,9 +79,9 @@
 
 .idea-orn {
 	color: #B72624;
-	font-size: 3em;
-	line-height: 1em;
-	white-space: pre;
+	font-size: 42px;
+	line-height: 42px;
+	white-space: nowrap;
 	margin: 0;
 }
 
@@ -193,7 +197,7 @@
 	font-weight: bold;
 	position: absolute;
 	top: 42%;
-	right: 36%;
+	right: 37%;
 }
 
 .taras-grammar {
@@ -202,7 +206,7 @@
 	font-weight: bold;
 	position: absolute;
 	top: 57%;
-	left: 14%;
+	left: 9%;
 	z-index: 2;
 }
 

@@ -11,7 +11,7 @@ angular.module('reloadYoutube', [])
 					myIframe.css('display', 'none');
 					$timeout(function () {
 						myIframe.css('display', 'block');
-					}, 500);
+					});
 				}
 			}
 		};

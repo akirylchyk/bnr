@@ -161,6 +161,13 @@ angular.module('ionic-pullup', [])
 						case 'dragend':
 							$element.css({'transition': '300ms ease-in-out'});
 							footer.lastPosY = footer.posY;
+							var myIframe = angular.element(document).find('iframe');
+							if (myIframe) {
+								myIframe.css('display', 'none');
+								$timeout(function () {
+									myIframe.css('display', 'block');
+								});
+							}
 							break;
 					}
 				};

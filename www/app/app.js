@@ -24,7 +24,8 @@ angular.module('app',
 		'readMore',
 		'ion-gallery',
 		'ionic-pullup',
-		'ionic.contrib.ui.cards'
+		'ionic.contrib.ui.cards',
+		'reloadYoutube'
 	])
 
 	.config(function ($sceDelegateProvider) {

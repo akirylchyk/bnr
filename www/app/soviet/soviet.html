@@ -29,44 +29,43 @@
 
 
 	</ion-content>
+	<ion-pull-up-footer class="bar-dark"
+	                    on-expand="footerExpand()"
+	                    on-collapse="footerCollapse()"
+	                    initial-state="minimized"
+	                    default-behavior="expand">
+		<ion-pull-up-handle width="100"
+		                    height="25"
+		                    toggle="ion-chevron-up ion-chevron-down"
+		                    class="ion-pull-up-handle">
+			<i class="icon ion-chevron-up"></i>
+		</ion-pull-up-handle>
+
+		<ion-pull-up-content class="soviet-pull" scroll="true">
+			<div ng-if="selectedPull === 1916" ng-include="'app/soviet/templates/gallery-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1917" ng-include="'app/soviet/templates/nezal-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1918" ng-include="'app/soviet/templates/kaizer-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1919" ng-include="'app/soviet/templates/bssr-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1920" ng-include="'app/soviet/templates/sluck-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1921" ng-include="'app/soviet/templates/souz-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1922" ng-include="'app/soviet/templates/reforma-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1923" ng-include="'app/soviet/templates/bnr-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1924" ng-include="'app/soviet/templates/repressions-pull.html'"></div>
+
+			<div ng-if="selectedPull === 1925" ng-include="'app/soviet/templates/likv-pull.html'"></div>
+
+		</ion-pull-up-content>
+
+	</ion-pull-up-footer>
 </ion-view>
-
-<ion-pull-up-footer class="bar-dark"
-                    on-expand="footerExpand()"
-                    on-collapse="footerCollapse()"
-                    initial-state="minimized"
-                    default-behavior="expand">
-	<ion-pull-up-handle width="100"
-	                    height="25"
-	                    toggle="ion-chevron-up ion-chevron-down"
-	                    class="ion-pull-up-handle">
-		<i class="icon ion-chevron-up"></i>
-	</ion-pull-up-handle>
-
-	<ion-pull-up-content class="soviet-pull" scroll="false">
-		<div ng-if="selectedPull === 1916" ng-include="'app/soviet/templates/gallery-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1917" ng-include="'app/soviet/templates/nezal-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1918" ng-include="'app/soviet/templates/kaizer-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1919" ng-include="'app/soviet/templates/bssr-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1920" ng-include="'app/soviet/templates/sluck-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1921" ng-include="'app/soviet/templates/souz-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1922" ng-include="'app/soviet/templates/reforma-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1923" ng-include="'app/soviet/templates/bnr-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1924" ng-include="'app/soviet/templates/repressions-pull.html'"></div>
-
-		<div ng-if="selectedPull === 1925" ng-include="'app/soviet/templates/likv-pull.html'"></div>
-
-	</ion-pull-up-content>
-
-</ion-pull-up-footer>
 
 <script id="soviet-popover.html" type="text/ng-template">
 	<ion-popover-view>

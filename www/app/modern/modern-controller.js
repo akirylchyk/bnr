@@ -8,13 +8,16 @@
 		'$state',
 		'$ionicActionSheet',
 		'national',
-		'soviet'
+		'soviet',
+		'settings'
 	];
 
-	var controller = function ($scope, modern, years, $state, $ionicActionSheet, national, soviet) {
+	var controller = function ($scope, modern, years, $state, $ionicActionSheet, national, soviet, settings) {
 
 		window.scope = $scope;
 
+		$scope.options = settings.getOptions();
+		
 		$scope.items = [
 			{
 				src: 'css/img/1.jpg',

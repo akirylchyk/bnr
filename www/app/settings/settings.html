@@ -7,7 +7,7 @@
 				<li class="item item-toggle">
 					Паказваць камэнтары
 					<label class="toggle toggle-balanced">
-						<input type="checkbox">
+						<input type="checkbox" ng-model="options.comments">
 						<div class="track">
 							<div class="handle"></div>
 						</div>
@@ -16,7 +16,7 @@
 				<li class="item item-toggle">
 					Уключыць апавяшчэнні
 					<label class="toggle toggle-balanced">
-						<input type="checkbox">
+						<input type="checkbox" ng-model="options.alerts">
 						<div class="track">
 							<div class="handle"></div>
 						</div>
@@ -25,7 +25,7 @@
 				<li class="item item-toggle">
 					Паказваць імя
 					<label class="toggle toggle-balanced">
-						<input type="checkbox">
+						<input type="checkbox" ng-model="options.name">
 						<div class="track">
 							<div class="handle"></div>
 						</div>
@@ -39,8 +39,8 @@
 			<button class="button button-balanced" ng-click="openModal()">
 				Стварыць акаўнт
 			</button>
-			<button class="button button-positive ion-social-facebook settings-social"></button>
-			<button class="button button-assertive ion-social-googleplus settings-social"></button>
+			<button ng-disabled="true" class="button button-positive ion-social-facebook settings-social"></button>
+			<button ng-disabled="true" class="button button-assertive ion-social-googleplus settings-social"></button>
 		</div>
 
 	</ion-content>

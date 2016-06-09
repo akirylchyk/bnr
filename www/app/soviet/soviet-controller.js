@@ -9,12 +9,15 @@
 		'years',
 		'$ionicActionSheet',
 		'$state',
-		'modern'
+		'modern',
+		'settings'
 	];
 
-	var controller = function ($scope, soviet, $ionicPopover, national, years, $ionicActionSheet, $state, modern) {
+	var controller = function ($scope, soviet, $ionicPopover, national, years, $ionicActionSheet, $state, modern, settings) {
 
 		window.scope = $scope;
+		
+		$scope.options = settings.getOptions();
 
 		$scope.showActionSheet = function () {
 

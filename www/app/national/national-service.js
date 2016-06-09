@@ -10,7 +10,11 @@
 			repressionItems = [
 				{name: 'Браніслаў Тарашкевіч', photo: 'css/img/repression/bt.jpg', info: 'Растраляны ў 1948 годзе'},
 				{name: 'Вацлаў Ластоўскі', photo: 'css/img/repression/vl.jpg', info: 'Растраляны ў 1942 годзе'},
-				{name: 'Максім Гарэцкі', photo: 'css/img/repression/mg.jpg', info: 'Растраляны ў 1933 годзе'}
+				{name: 'Максім Гарэцкі', photo: 'css/img/repression/mg.jpg', info: 'Растраляны ў 1933 годзе'},
+				{name: 'Палута Бадунова', photo: 'css/img/repression/paluta.jpg', info: 'Растраляна ў 1938 годзе'},
+				{name: 'Сцяпан Некрашэвіч', photo: 'css/img/repression/nekr.jpg', info: 'Растраляны ў 1937 годзе'},
+				{name: 'Кастусь Езавітаў', photo: 'css/img/repression/ezav.jpg', info: 'Растраляны ў 1946 годзе'},
+				{name: 'Язэп Лёсік', photo: 'css/img/repression/lesik.jpg', info: 'Растраляны ў 1940 годзе'}
 			],
 			comments = {
 				1900: [],

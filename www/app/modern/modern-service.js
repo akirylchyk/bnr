@@ -63,6 +63,38 @@
 				state: 'tabs.chronicleSoviet',
 				image: 'css/img/modern/polaroids/4.jpg'
 			}],
+			comments = {
+				1900: [],
+				1901: [],
+				1902: [],
+				1903: [],
+				1904: [],
+				1905: [],
+				1906: [],
+				1907: [],
+				1908: [],
+				1909: [],
+				1910: [],
+				1911: [],
+				1912: [],
+				1913: [],
+				1914: [],
+				1915: [],
+				1916: [],
+				1917: [],
+				1918: [{
+					author: 'Nadya',
+					text: 'Современная государственность обеспечивает нашу независимость',
+					date: '2016-05-29 20:17'
+				}],
+				1919: [],
+				1920: [],
+				1921: [],
+				1922: [],
+				1923: [],
+				1924: [],
+				1925: []
+			},
 			index = 18;
 
 		service.setIndex = function(val){
@@ -83,6 +115,14 @@
 
 		service.getCards = function () {
 			return cardTypes;
+		};
+
+		service.getComments = function (year) {
+			return comments[year];
+		};
+
+		service.setComments = function (newComments, year) {
+			comments[year] = newComments;
 		};
 
 		return service;

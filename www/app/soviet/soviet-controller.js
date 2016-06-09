@@ -31,7 +31,7 @@
 					}
 
 					if (index === 1) {
-						$state.go('tabs.chronicleModern')
+						$state.go('tabs.chronicleModern');
 						modern.setIndex(20);
 					}
 					console.log(index);
@@ -74,19 +74,35 @@
 		$scope.$on('popover.removed', function () {
 			// Execute action
 		});
-
-
+		
 		$scope.years = years.getYears();
 
 		$scope.selectedYear = $scope.years[soviet.getIndex()];
 
-		$scope.selectedPull = $scope.selectedYear.number;
+		if(!$scope.selectedPull){
+			$scope.selectedPull = $scope.selectedYear.number;
+		}
 
 		$scope.$on('morphSelected', function (a, b) {
 			if (b) {
 				$scope.selectedPull = b.number;
 			}
 		});
+
+		$scope.comments = soviet.getComments($scope.selectedPull);
+
+		$scope.$watch('selectedPull', function (newVal, oldVal) {
+			if (newVal !== oldVal) {
+				$scope.comments = [];
+				$scope.comments = soviet.getComments(newVal);
+			}
+		});
+
+		$scope.addComment = function () {
+			$scope.comments.push({author: 'Я', text: $scope.new.comment, date: new Date()});
+			soviet.setComments($scope.comments, $scope.selectedPull);
+			$scope.new.comment = '';
+		};
 
 		$scope.items = [
 			{

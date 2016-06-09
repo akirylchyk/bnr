@@ -1,0 +1,39 @@
+<div ng-controller="modernController">
+	<button
+		ng-init="showComments = false"
+		ng-click="showComments = !showComments"
+		class="button button-outline button-light show-comments">
+		<span ng-show="!showComments">Паказаць каментары</span>
+		<span ng-show="showComments">Схаваць каментары</span>
+	</button>
+
+	<div ng-show="showComments">
+		<div class="chat helvetica-font">
+			<div ng-repeat="comment in comments">
+				<div class="row" ng-if="comment.author !== 'Я'">
+					<div class="bubble you">
+						{{comment.text}}
+						<span class="pull-comments-author">{{comment.author}}</span>
+						<span class="pull-comments-date">{{comment.date | date: 'yyyy-MM-dd HH:mm'}}</span>
+					</div>
+				</div>
+				<div class="row" ng-if="comment.author === 'Я'">
+					<div class="bubble me">
+						{{comment.text}}
+						<span class="pull-comments-author">{{comment.author}}</span>
+						<span class="pull-comments-date">{{comment.date | date: 'yyyy-MM-dd HH:mm'}}</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row pull-comments-wrapper">
+		<textarea ng-model="new.comment"
+		          placeholder="Пакіньце свой каментар.."
+		          class="pull-comments-textarea"></textarea>
+			<button ng-disabled="!new.comment"
+			        ng-click="addComment()"
+			        class="button button-positive icon ion-paper-airplane"></button>
+		</div>
+	</div>
+</div>

@@ -11,6 +11,7 @@
 	padding: 10px 18px;
 	position: relative;
 	vertical-align: top;
+	color: black;
 }
 
 .bubble::before {

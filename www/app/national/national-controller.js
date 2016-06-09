@@ -42,18 +42,28 @@
 			});
 		};
 
-
 		var repressionItems = national.getRepressionItems();
 
 		$scope.years = years.getYears();
 
 		$scope.selectedYear = $scope.years[national.getIndex()];
 
-		$scope.selectedPull = $scope.selectedYear.number;
+		if(!$scope.selectedPull){
+			$scope.selectedPull = $scope.selectedYear.number;
+		}
 
 		$scope.$on('morphSelected', function (a, b) {
 			if (b) {
 				$scope.selectedPull = b.number;
+			}
+		});
+
+		$scope.comments = national.getComments($scope.selectedPull);
+
+		$scope.$watch('selectedPull', function (newVal, oldVal) {
+			if (newVal !== oldVal) {
+				$scope.comments = [];
+				$scope.comments = national.getComments(newVal);
 			}
 		});
 
@@ -88,7 +98,6 @@
 			// Execute action
 		});
 
-
 		var cardTypes = chronicle.getCards();
 
 		$scope.cards = [];
@@ -122,16 +131,15 @@
 		};
 
 		$scope.timeline = chronicle.getTimeline();
-
-		$scope.comments = [];
-
+		
 		$scope.new = {comment: ''};
 
 		$scope.addComment = function () {
 			$scope.comments.push({author: 'Я', text: $scope.new.comment, date: new Date()});
+			national.setComments($scope.comments, $scope.selectedPull);
 			$scope.new.comment = '';
 		}
-		
+
 	};
 
 	controller.$inject = injections;

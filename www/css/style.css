@@ -42,6 +42,14 @@
 	color: #000;
 }
 
+.show-comments {
+	margin-left: 15px;
+}
+
+.youtube-push {
+	margin-bottom: 20px;
+}
+
 .modern-back, .modern-pull {
 	background: linear-gradient(141deg, #57604C 0%, #515A47 51%, #49523F 75%);
 }
